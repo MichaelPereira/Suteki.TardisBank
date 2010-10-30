@@ -10,6 +10,7 @@ namespace Suteki.TardisBank.Model
         public string Name { get; private set; }
         public string UserName { get; private set; }
         public string Password { get; private set; }
+        public bool IsActive { get; protected set; }
         public IList<Message> Messages { get; protected set; }
 
         protected User(string name, string userName, string password)
@@ -19,6 +20,7 @@ namespace Suteki.TardisBank.Model
             UserName = userName;
             Password = password;
             Messages = new List<Message>();
+            IsActive = false;
         }
 
         public static string UserIdFromUserName(string userName)
@@ -40,6 +42,16 @@ namespace Suteki.TardisBank.Model
                 throw new TardisBankException(ResourceMessages.FormatNoMessageWithIdForUser, messageId, UserName);
             }
             message.Read();
+        }
+
+        public virtual void Activate()
+        {
+            IsActive = true;
+        }
+
+        public void ResetPassword(string newPassword)
+        {
+            Password = newPassword;
         }
     }
 }

@@ -70,14 +70,23 @@
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\OpenidController.cs" />
+	<Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\ScheduleController.cs" />
+	<Compile Include="Controllers\ScheduleRunnerController.cs" />
     <Compile Include="Controllers\StatusCode.cs" />
     <Compile Include="Controllers\UserController.cs" />
+	<Compile Include="Events\DomainEvent.cs" />
+	<Compile Include="Events\IDomainEvent.cs" />
+	<Compile Include="Events\NewParentCreatedEvent.cs" />
+	<Compile Include="Handlers\IHandle.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+	<Compile Include="Handlers\SendRegistrationEmailHandler.cs" />
     <Compile Include="IoC\ControllersInstaller.cs" />
     <Compile Include="IoC\CoreInstaller.cs" />
+	<Compile Include="IoC\HandlerInstaller.cs" />
     <Compile Include="IoC\RavenInstaller.cs" />
     <Compile Include="IoC\ServicesInstaller.cs" />
+	<Compile Include="IoC\TardisConfiguration.cs" />
     <Compile Include="IoC\WindsorControllerFactory.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\Child.cs" />
@@ -94,13 +103,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>ResourceMessages.resx</DependentUpon>
     </Compile>
+	<Compile Include="Services\EmailService.cs" />
     <Compile Include="Services\FormsAuthenticationService.cs" />
     <Compile Include="Services\HttpContextService.cs" />
     <Compile Include="Services\OpenIdService.cs" />
+	<Compile Include="Services\SchedulerService.cs" />
     <Compile Include="Services\UserService.cs" />
     <Compile Include="TardisBankException.cs" />
     <Compile Include="ViewModel\AddScheduleViewModel.cs" />
-    <Compile Include="ViewModel\LoginViewModel.cs" />
+    <Compile Include="ViewModel\ForgottenPasswordViewModel.cs" />
+	<Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MakePaymentViewModel.cs" />
     <Compile Include="ViewModel\RegistrationViewModel.cs" />
     <Compile Include="ViewModel\UserViewModel.cs" />

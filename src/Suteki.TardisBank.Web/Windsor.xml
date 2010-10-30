@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<configuration>
+  <components>
+
+    <component id="TardisConfiguration">
+      <parameters>
+        <!-- 
+        this is the key to put in the querystring to run the scheduled task process 
+        e.g. http://example.com/ScheduleRunner/Execute/<ScheduleKey_value>
+        -->
+        <ScheduleKey>runit</ScheduleKey>
+
+        <!--if EmailSmtpServer is empty emails just don't get sent-->
+        <EmailSmtpServer>smtp.gmail.com</EmailSmtpServer>
+        <EmailEnableSsl>true</EmailEnableSsl>
+        <EmailPort>587</EmailPort>
+        
+        <!--if the username or password is blank, default credentials are used.-->
+        <EmailCredentialsUserName>info@tardisbank.com</EmailCredentialsUserName>
+        <EmailCredentialsPassword>____</EmailCredentialsPassword>
+      
+        <EmailFromAddress>info@tardisbank.com</EmailFromAddress>
+
+      </parameters>
+    </component>
+
+  </components>
+</configuration>
