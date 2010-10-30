@@ -1,10 +1,10 @@
-Tardis Bank
+Tardis Bank Internationalized Version
 -----------
 
 Online pocket money banking for parents and kids.
 
 http://tardisbank.com
-http://github.com/mikehadlow/Suteki.TardisBank
+http://github.com/MichaelPereira/Suteki.TardisBank/ (forked from http://github.com/mikehadlow/Suteki.TardisBank)
 
 Licence: Apache 2.0
 http://www.apache.org/licenses/LICENSE-2.0.html
