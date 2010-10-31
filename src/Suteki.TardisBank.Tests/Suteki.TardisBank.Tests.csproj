@@ -1,4 +1,4 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -32,6 +32,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Castle.Windsor, Version=2.5.1.0, Culture=neutral, PublicKeyToken=407dd0808d44fbdc, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Castle.Windsor.2.5.1\lib\NET40\Castle.Windsor.dll</HintPath>
+    </Reference>
     <Reference Include="nunit.framework, Version=2.5.7.10213, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\packages\NUnit.2.5.7.10213\lib\nunit.framework.dll</HintPath>
@@ -57,6 +61,7 @@
       <HintPath>..\packages\RhinoMocks.3.6\lib\Rhino.Mocks.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="System.Core" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Web" />
@@ -69,7 +74,6 @@
   <ItemGroup>
     <Compile Include="Controllers\HomeControllerTests.cs" />
     <Compile Include="Db\LocalClientTest.cs" />
-    <Compile Include="Extensions\StringExtensionsTests.cs" />
     <Compile Include="Helpers\ActionResultExtensions.cs" />
     <Compile Include="Model\ChildTests.cs" />
     <Compile Include="Model\MakePaymentTests.cs" />
@@ -84,8 +88,10 @@
     <Compile Include="Services\EmailServiceTests.cs" />
     <Compile Include="Spikes\RavenDbAnyOfPropertyCollection.cs" />
     <Compile Include="Spikes\RavenDbDoesntDoSelectMany.cs" />
+    <Compile Include="Spikes\RavenDbSchedulingWithIndex.cs" />
     <Compile Include="TestExtensions.cs" />
     <Compile Include="Version.cs" />
+	<Compile Include="Extensions\StringExtensionsTests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
