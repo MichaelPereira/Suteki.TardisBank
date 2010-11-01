@@ -42,6 +42,9 @@
     <Reference Include="Castle.Windsor">
       <HintPath>..\packages\Castle.Windsor.2.5.1\lib\NET40\Castle.Windsor.dll</HintPath>
     </Reference>
+    <Reference Include="Elmah">
+      <HintPath>..\packages\elmah.1.1\lib\Elmah.dll</HintPath>
+    </Reference>
     <Reference Include="System.Web.Mvc, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
     </Reference>
@@ -79,11 +82,13 @@
     <Content Include="404Error.htm" />
     <Content Include="Content\960.css" />
     <Content Include="Content\Images\hover.gif" />
+    <Content Include="Content\Images\meandleo.png" />
     <Content Include="Content\Images\seperator.gif" />
     <Content Include="Content\Images\title_background.png" />
     <Content Include="Content\menu_style.css" />
     <Content Include="Content\reset.css" />
     <Content Include="Content\text.css" />
+    <Content Include="favicon.ico" />
     <Content Include="GenericError.htm" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
@@ -116,7 +121,9 @@
     <None Include="Views\Account\WithdrawCashConfirm.cshtml" />
     <None Include="Views\Child\DeleteChild.cshtml" />
     <None Include="Views\Child\Index.cshtml" />
+    <None Include="Views\Home\About.cshtml" />
     <None Include="Views\Home\Index.cshtml" />
+    <None Include="Views\Home\Legal.cshtml" />
     <None Include="Views\Menu\ChildMenu.cshtml" />
     <None Include="Views\Menu\GuestMenu.cshtml" />
     <None Include="Views\Menu\ParentMenu.cshtml" />
