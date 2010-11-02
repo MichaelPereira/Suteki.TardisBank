@@ -67,6 +67,7 @@
       <Link>Version.cs</Link>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
     <Compile Include="Controllers\ChildController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
@@ -79,8 +80,10 @@
     <Compile Include="Events\DomainEvent.cs" />
     <Compile Include="Events\IDomainEvent.cs" />
     <Compile Include="Events\NewParentCreatedEvent.cs" />
+    <Compile Include="Events\SendMessageEvent.cs" />
     <Compile Include="Handlers\IHandle.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Handlers\SendMessageEmailHandler.cs" />
     <Compile Include="Handlers\SendRegistrationEmailHandler.cs" />
     <Compile Include="Indexes\Child_ByPendingSchedule.cs" />
     <Compile Include="IoC\ControllersInstaller.cs" />
