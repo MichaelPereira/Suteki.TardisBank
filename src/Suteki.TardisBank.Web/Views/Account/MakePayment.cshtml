@@ -11,16 +11,16 @@
     @Html.HiddenFor(x => x.ChildName)
     <table>
         <tr>
-            <td><label for="Description">Payment Description</label></td>
+            <td><label for="Description">@Suteki.TardisBank.Web.Lang.PaymentDescription</label></td>
             <td>@Html.TextBoxFor(x => x.Description)</td>
         </tr>
         <tr>
-            <td><label for="Amount">Amount</label></td>
+            <td><label for="Amount">@Suteki.TardisBank.Web.Lang.Amount</label></td>
             <td>@Html.TextBoxFor(x => x.Amount)</td>
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td><input type="submit" value="Make Payment" /></td>
+            <td><input type="submit" value="@Suteki.TardisBank.Web.Lang.MakePayment" /></td>
         </tr>
     </table>
     @{ Html.EndForm(); }
