@@ -121,7 +121,7 @@
     <value>Amount</value>
   </data>
   <data name="FormatPaymentConfirmedMessage" xml:space="preserve">
-    <value>You have transferred {0} to {1]'s account with the description "{2}".</value>
+    <value>You have transferred {0} to {1}'s account with the description "{2}".</value>
   </data>
   <data name="MakePayment" xml:space="preserve">
     <value>Make Payment</value>

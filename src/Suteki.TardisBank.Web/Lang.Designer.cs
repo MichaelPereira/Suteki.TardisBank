@@ -70,7 +70,7 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to You have transferred {0} to {1]&apos;s account with the description &quot;{2}&quot;..
+        ///   Looks up a localized string similar to You have transferred {0} to {1}&apos;s account with the description &quot;{2}&quot;..
         /// </summary>
         public static string FormatPaymentConfirmedMessage {
             get {
