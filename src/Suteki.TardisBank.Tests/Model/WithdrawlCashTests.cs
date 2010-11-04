@@ -42,7 +42,7 @@ namespace Suteki.TardisBank.Tests.Model
             child.Account.Transactions[1].Description.ShouldEqual("For Toys");
 
             parent.Messages.Count.ShouldEqual(1);
-            parent.Messages[0].Text.ShouldEqual("Leo would like to withdraw 2.30");
+            parent.Messages[0].Text.ShouldEqual("Leo would like to withdraw "+2.30M);
         }
 
         [Test, ExpectedException(typeof(CashWithdrawException), ExpectedMessage = "Not Your Parent")]
@@ -69,7 +69,7 @@ namespace Suteki.TardisBank.Tests.Model
 
             sendMessageEvent.ShouldNotBeNull();
             sendMessageEvent.User.ShouldBeTheSameAs(parent);
-            sendMessageEvent.Message.ShouldEqual("Leo would like to withdraw 2.30");
+            sendMessageEvent.Message.ShouldEqual("Leo would like to withdraw "+2.30M);
         }
     }
 }
