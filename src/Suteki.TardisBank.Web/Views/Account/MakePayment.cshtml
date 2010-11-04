@@ -2,8 +2,9 @@
 
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
+	var pageTitle = String.Format(Suteki.TardisBank.Web.Lang.FormatMakeAPaymentTo, Model.ChildName);
 }
-<h2>Make a Payment to @Model.ChildName</h2>
+<h2>@pageTitle</h2>
 <p>@Html.ValidationSummary()</p>
 <div>
     @{ Html.BeginForm(); }

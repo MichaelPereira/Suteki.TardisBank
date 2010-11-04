@@ -120,17 +120,62 @@
   <data name="Amount" xml:space="preserve">
     <value>Amount</value>
   </data>
+  <data name="CurrentBalance" xml:space="preserve">
+    <value>Current Balance</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Due" xml:space="preserve">
+    <value>Due</value>
+  </data>
+  <data name="FormatAccountSummary" xml:space="preserve">
+    <value>{0}'s Account Summary</value>
+  </data>
+  <data name="FormatChildAccount" xml:space="preserve">
+    <value>{0}'s Account</value>
+  </data>
+  <data name="FormatMakeAPaymentTo" xml:space="preserve">
+    <value>Make a Payment to {0}</value>
+  </data>
   <data name="FormatPaymentConfirmedMessage" xml:space="preserve">
     <value>You have transferred {0} to {1}'s account with the description "{2}".</value>
   </data>
+  <data name="Interval" xml:space="preserve">
+    <value>Interval</value>
+  </data>
+  <data name="MakeAPayment" xml:space="preserve">
+    <value>Make a Payment</value>
+  </data>
   <data name="MakePayment" xml:space="preserve">
     <value>Make Payment</value>
+  </data>
+  <data name="NoPocketMoneySchedule" xml:space="preserve">
+    <value>No pocket money schedule has been created yet.</value>
+  </data>
+  <data name="NoTransactions" xml:space="preserve">
+    <value>There are no transactions yet.</value>
   </data>
   <data name="PaymentConfirmed" xml:space="preserve">
     <value>Payment Confirmed</value>
   </data>
   <data name="PaymentDescription" xml:space="preserve">
     <value>Payment Description</value>
+  </data>
+  <data name="PocketMoneySchedule" xml:space="preserve">
+    <value>Pocket Money Schedule</value>
+  </data>
+  <data name="SetUpSchedule" xml:space="preserve">
+    <value>Set up Schedule</value>
+  </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>Transactions</value>
   </data>
   <data name="WebsiteDescription" xml:space="preserve">
     <value>A free, online, pocket money bank account for parents and kids.</value>
@@ -140,5 +185,8 @@
   </data>
   <data name="WebsiteTitle" xml:space="preserve">
     <value>Tardis Bank</value>
+  </data>
+  <data name="WithdrawCash" xml:space="preserve">
+    <value>Withdraw Cash</value>
   </data>
 </root>

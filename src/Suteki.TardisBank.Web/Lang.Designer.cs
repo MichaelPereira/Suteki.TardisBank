@@ -70,6 +70,78 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Current Balance.
+        /// </summary>
+        public static string CurrentBalance {
+            get {
+                return ResourceManager.GetString("CurrentBalance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Date.
+        /// </summary>
+        public static string Date {
+            get {
+                return ResourceManager.GetString("Date", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete.
+        /// </summary>
+        public static string Delete {
+            get {
+                return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Description.
+        /// </summary>
+        public static string Description {
+            get {
+                return ResourceManager.GetString("Description", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Due.
+        /// </summary>
+        public static string Due {
+            get {
+                return ResourceManager.GetString("Due", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0}&apos;s Account Summary.
+        /// </summary>
+        public static string FormatAccountSummary {
+            get {
+                return ResourceManager.GetString("FormatAccountSummary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to {0}&apos;s Account.
+        /// </summary>
+        public static string FormatChildAccount {
+            get {
+                return ResourceManager.GetString("FormatChildAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make a Payment to {0}.
+        /// </summary>
+        public static string FormatMakeAPaymentTo {
+            get {
+                return ResourceManager.GetString("FormatMakeAPaymentTo", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You have transferred {0} to {1}&apos;s account with the description &quot;{2}&quot;..
         /// </summary>
         public static string FormatPaymentConfirmedMessage {
@@ -79,11 +151,47 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Interval.
+        /// </summary>
+        public static string Interval {
+            get {
+                return ResourceManager.GetString("Interval", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Make a Payment.
+        /// </summary>
+        public static string MakeAPayment {
+            get {
+                return ResourceManager.GetString("MakeAPayment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Make Payment.
         /// </summary>
         public static string MakePayment {
             get {
                 return ResourceManager.GetString("MakePayment", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to No pocket money schedule has been created yet..
+        /// </summary>
+        public static string NoPocketMoneySchedule {
+            get {
+                return ResourceManager.GetString("NoPocketMoneySchedule", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to There are no transactions yet..
+        /// </summary>
+        public static string NoTransactions {
+            get {
+                return ResourceManager.GetString("NoTransactions", resourceCulture);
             }
         }
         
@@ -102,6 +210,33 @@ namespace Suteki.TardisBank.Web {
         public static string PaymentDescription {
             get {
                 return ResourceManager.GetString("PaymentDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Pocket Money Schedule.
+        /// </summary>
+        public static string PocketMoneySchedule {
+            get {
+                return ResourceManager.GetString("PocketMoneySchedule", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Set up Schedule.
+        /// </summary>
+        public static string SetUpSchedule {
+            get {
+                return ResourceManager.GetString("SetUpSchedule", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Transactions.
+        /// </summary>
+        public static string Transactions {
+            get {
+                return ResourceManager.GetString("Transactions", resourceCulture);
             }
         }
         
@@ -129,6 +264,15 @@ namespace Suteki.TardisBank.Web {
         public static string WebsiteTitle {
             get {
                 return ResourceManager.GetString("WebsiteTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Withdraw Cash.
+        /// </summary>
+        public static string WithdrawCash {
+            get {
+                return ResourceManager.GetString("WithdrawCash", resourceCulture);
             }
         }
     }
