@@ -61,11 +61,38 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to This action can not be undone..
+        /// </summary>
+        public static string ActionCanNotBeUndone {
+            get {
+                return ResourceManager.GetString("ActionCanNotBeUndone", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Administer your account.
+        /// </summary>
+        public static string AdministerYourAccount {
+            get {
+                return ResourceManager.GetString("AdministerYourAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Amount.
         /// </summary>
         public static string Amount {
             get {
                 return ResourceManager.GetString("Amount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Back to your account.
+        /// </summary>
+        public static string BackToYourAccount {
+            get {
+                return ResourceManager.GetString("BackToYourAccount", resourceCulture);
             }
         }
         
@@ -93,6 +120,42 @@ namespace Suteki.TardisBank.Web {
         public static string Delete {
             get {
                 return ResourceManager.GetString("Delete", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To delete your account, including your children&apos;s accounts, click the button below..
+        /// </summary>
+        public static string DeleteAccountPresentation {
+            get {
+                return ResourceManager.GetString("DeleteAccountPresentation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Yes I&apos;m sure. Delete my account.
+        /// </summary>
+        public static string DeleteConfirmation {
+            get {
+                return ResourceManager.GetString("DeleteConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete your account?.
+        /// </summary>
+        public static string DeleteConfirmationMessage {
+            get {
+                return ResourceManager.GetString("DeleteConfirmationMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Delete My Account.
+        /// </summary>
+        public static string DeleteMyAccount {
+            get {
+                return ResourceManager.GetString("DeleteMyAccount", resourceCulture);
             }
         }
         
@@ -147,6 +210,15 @@ namespace Suteki.TardisBank.Web {
         public static string FormatPaymentConfirmedMessage {
             get {
                 return ResourceManager.GetString("FormatPaymentConfirmedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A message has been sent to your parent asking for the amount of {0}. Ask them to check their messages..
+        /// </summary>
+        public static string FormatWithdrawlConfirmedMessage {
+            get {
+                return ResourceManager.GetString("FormatWithdrawlConfirmedMessage", resourceCulture);
             }
         }
         
@@ -273,6 +345,15 @@ namespace Suteki.TardisBank.Web {
         public static string WithdrawCash {
             get {
                 return ResourceManager.GetString("WithdrawCash", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Withdrawl Confirmed.
+        /// </summary>
+        public static string WithdrawlConfirmed {
+            get {
+                return ResourceManager.GetString("WithdrawlConfirmed", resourceCulture);
             }
         }
     }

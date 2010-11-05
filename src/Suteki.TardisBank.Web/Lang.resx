@@ -117,8 +117,17 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="ActionCanNotBeUndone" xml:space="preserve">
+    <value>This action can not be undone.</value>
+  </data>
+  <data name="AdministerYourAccount" xml:space="preserve">
+    <value>Administer your account</value>
+  </data>
   <data name="Amount" xml:space="preserve">
     <value>Amount</value>
+  </data>
+  <data name="BackToYourAccount" xml:space="preserve">
+    <value>Back to your account</value>
   </data>
   <data name="CurrentBalance" xml:space="preserve">
     <value>Current Balance</value>
@@ -128,6 +137,18 @@
   </data>
   <data name="Delete" xml:space="preserve">
     <value>Delete</value>
+  </data>
+  <data name="DeleteAccountPresentation" xml:space="preserve">
+    <value>To delete your account, including your children's accounts, click the button below.</value>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>Yes I'm sure. Delete my account</value>
+  </data>
+  <data name="DeleteConfirmationMessage" xml:space="preserve">
+    <value>Are you sure you want to delete your account?</value>
+  </data>
+  <data name="DeleteMyAccount" xml:space="preserve">
+    <value>Delete My Account</value>
   </data>
   <data name="Description" xml:space="preserve">
     <value>Description</value>
@@ -146,6 +167,9 @@
   </data>
   <data name="FormatPaymentConfirmedMessage" xml:space="preserve">
     <value>You have transferred {0} to {1}'s account with the description "{2}".</value>
+  </data>
+  <data name="FormatWithdrawlConfirmedMessage" xml:space="preserve">
+    <value>A message has been sent to your parent asking for the amount of {0}. Ask them to check their messages.</value>
   </data>
   <data name="Interval" xml:space="preserve">
     <value>Interval</value>
@@ -188,5 +212,8 @@
   </data>
   <data name="WithdrawCash" xml:space="preserve">
     <value>Withdraw Cash</value>
+  </data>
+  <data name="WithdrawlConfirmed" xml:space="preserve">
+    <value>Withdrawl Confirmed</value>
   </data>
 </root>
