@@ -6,8 +6,14 @@
 	var childAccount = String.Format(Suteki.TardisBank.Web.Lang.FormatChildAccount, Model.ChildName);
 }
 
+<<<<<<< HEAD
 <h2>@Suteki.TardisBank.Web.Lang.PaymentConfirmed</h2>
 <p>@paymentConfirmedMessage</p>
 <p>@Html.ActionLink(childAccount, "ParentView", "Account", new { id = @Model.ChildId }, null)</p>
+=======
+<h2>Payment Confirmed</h2>
+<p>You have transferred @Model.Amount.ToString("c") to @Model.ChildName's account with the description "@Model.Description".</p>
+<p>@Html.ActionLink(Model.ChildName + "'s Account", "ParentView", "Account", new { id = @Model.ChildId }, null)</p>
+>>>>>>> upstream/master
 
 

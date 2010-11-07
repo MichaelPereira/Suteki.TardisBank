@@ -22,6 +22,28 @@ namespace Suteki.TardisBank.Model
 
         public void WithdrawCashFromParent(Parent parent, decimal amount, string description)
         {
+            var insufficientFundsMessage = string.Format(
+                ResourceMessages.FormatCanNotWithdraw,
+                amount.ToString("c"),
+                Account.Balance.ToString("c"));
+
+            WithdrawInternal(parent, amount, description, insufficientFundsMessage);
+            parent.SendMessage(string.Format(ResourceMessages.FormatWouldLikeToWithdraw, Name, amount.ToString("c")));
+        }
+
+        public void AcceptCashFromParent(Parent parent, decimal amount, string description)
+        {
+            var insufficientFundsMessage = string.Format(
+                ResourceMessages.FormatCanNotWithdraw2,
+                amount.ToString("c"),
+                Name,
+                Account.Balance.ToString("c"));
+
+            WithdrawInternal(parent, amount, description, insufficientFundsMessage);
+        }
+
+        void WithdrawInternal(Parent parent, decimal amount, string description, string insufficientFundsMessage)
+        {
             if (parent == null)
             {
                 throw new ArgumentNullException(ResourceMessages.MissingParentParameter);
@@ -38,13 +60,9 @@ namespace Suteki.TardisBank.Model
 
             if (amount > Account.Balance)
             {
-                throw new CashWithdrawException(string.Format(
-                    ResourceMessages.FormatCanNotWithdraw, 
-                     amount.ToString("0.00"),
-                    Account.Balance.ToString("0.00")));
+                throw new CashWithdrawException(insufficientFundsMessage);
             }
 
-            parent.SendMessage(string.Format(ResourceMessages.FormatWouldLikeToWithdraw, Name, amount.ToString("0.00")));
             Account.AddTransaction(description, -amount);
         }
     }

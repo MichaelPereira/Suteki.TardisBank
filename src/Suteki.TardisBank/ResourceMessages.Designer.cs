@@ -70,6 +70,15 @@ namespace Suteki.TardisBank {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You can not withdraw {0} because {1}&apos;s account only has {2}.
+        /// </summary>
+        public static string FormatCanNotWithdraw2 {
+            get {
+                return ResourceManager.GetString("FormatCanNotWithdraw2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to {0} is not a child of {1}.
         /// </summary>
         public static string FormatIsNotAChildOf {
