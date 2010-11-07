@@ -4,7 +4,7 @@ using Suteki.TardisBank.Services;
 
 namespace Suteki.TardisBank.Controllers
 {
-    public class AdminController : Controller
+    public class AdminController : LocalizedController
     {
         readonly IUserService userService;
 

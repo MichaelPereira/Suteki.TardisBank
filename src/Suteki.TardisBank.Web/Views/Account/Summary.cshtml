@@ -8,11 +8,7 @@
 <h2>@accountSummary</h2>
 
 <div class="grid_8 rightline">
-<<<<<<< HEAD
-    <p>@Suteki.TardisBank.Web.Lang.CurrentBalance: <strong>@Model.Child.Account.Balance.ToString("0.00")</strong></p>
-=======
-    <p>Current Balance: <strong>@Model.Child.Account.Balance.ToString("c")</strong></p>
->>>>>>> upstream/master
+    <p>@Suteki.TardisBank.Web.Lang.CurrentBalance: <strong>@Model.Child.Account.Balance.ToString("c")</strong></p>
 
     <h3>@Suteki.TardisBank.Web.Lang.PocketMoneySchedule</h3>
     @if(Model.Child.Account.PaymentSchedules.Count == 0) {
@@ -74,20 +70,14 @@
 
 <div class="grid_3">
     @if(Model.IsParentView) {
-<<<<<<< HEAD
+		<p>To make a payment into your child's bank account:</p>
         <div>@Html.ActionLink(Suteki.TardisBank.Web.Lang.MakeAPayment, "MakePayment", "Account", new { id = Model.Child.Id }, null)</div>
         <div>&nbsp;</div>
+		<p>To hand some cash to your child, or buy something on their behalf:</p>
+		<div>@Html.ActionLink("Withdraw Cash", "WithdrawCashForChild", "Account", new { id = Model.Child.Id }, null)</div>
+        <div>&nbsp;</div>
+		<p>To set up a pocket money payment schedule:</p>
         <div>@Html.ActionLink(Suteki.TardisBank.Web.Lang.SetUpSchedule, "AddSchedule", "Schedule", new { id = Model.Child.Id }, null)</div>
-=======
-        <p>To make a payment into your child's bank account:</p>
-        <div>@Html.ActionLink("Make a Payment", "MakePayment", "Account", new { id = Model.Child.Id }, null)</div>
-        <div>&nbsp;</div>
-        <p>To hand some cash to your child, or buy something on their behalf:</p>
-        <div>@Html.ActionLink("Withdraw Cash", "WithdrawCashForChild", "Account", new { id = Model.Child.Id }, null)</div>
-        <div>&nbsp;</div>
-        <p>To set up a pocket money payment schedule:</p>
-        <div>@Html.ActionLink("Set up Schedule", "AddSchedule", "Schedule", new { id = Model.Child.Id }, null)</div>
->>>>>>> upstream/master
     } else {
         <div>@Html.ActionLink(Suteki.TardisBank.Web.Lang.WithdrawCash, "WithdrawCash", "Account")</div>
     }

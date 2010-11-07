@@ -3,7 +3,7 @@ using Suteki.TardisBank.IoC;
 
 namespace Suteki.TardisBank.Controllers
 {
-    public class AnalyticsController : Controller
+    public class AnalyticsController : LocalizedController
     {
         readonly TardisConfiguration configuration;
 

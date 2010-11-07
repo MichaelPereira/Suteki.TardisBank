@@ -7,7 +7,7 @@ using Suteki.TardisBank.ViewModel;
 
 namespace Suteki.TardisBank.Controllers
 {
-    public class ScheduleController : Controller
+    public class ScheduleController : LocalizedController
     {
         readonly IUserService userService;
 

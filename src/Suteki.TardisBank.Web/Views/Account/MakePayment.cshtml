@@ -16,11 +16,7 @@
             <td>@Html.TextBoxFor(x => x.Description)</td>
         </tr>
         <tr>
-<<<<<<< HEAD
-            <td><label for="Amount">@Suteki.TardisBank.Web.Lang.Amount</label></td>
-=======
-            <td><label for="Amount">Amount @Current.CurrencySymbol</label></td>
->>>>>>> upstream/master
+            <td><label for="Amount">@Suteki.TardisBank.Web.Lang.Amount @Current.CurrencySymbol</label></td>
             <td>@Html.TextBoxFor(x => x.Amount)</td>
         </tr>
         <tr>

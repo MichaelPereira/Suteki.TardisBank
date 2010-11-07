@@ -6,7 +6,7 @@ using Suteki.TardisBank.Services;
 
 namespace Suteki.TardisBank.Controllers
 {
-    public class ScheduleRunnerController : Controller
+    public class ScheduleRunnerController : LocalizedController
     {
         readonly ISchedulerService schedulerService;
         readonly TardisConfiguration configuration;
