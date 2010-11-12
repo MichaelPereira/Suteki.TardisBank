@@ -196,6 +196,24 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Yes, Delete {0}&apos;s account.
+        /// </summary>
+        public static string FormatDeleteChildConfirmation {
+            get {
+                return ResourceManager.GetString("FormatDeleteChildConfirmation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Are you sure you want to delete {0}&apos;s account?.
+        /// </summary>
+        public static string FormatDeleteChildQuestion {
+            get {
+                return ResourceManager.GetString("FormatDeleteChildQuestion", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Make a Payment to {0}.
         /// </summary>
         public static string FormatMakeAPaymentTo {

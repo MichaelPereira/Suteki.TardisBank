@@ -1,10 +1,13 @@
 ﻿@model DeleteChildConfirmViewModel
 
 @{
+    @using Suteki.TardisBank.Web;
     Layout = "~/Views/Shared/SiteLayout.cshtml";
+    String confirmDeleteChildTitle = String.Format(Lang.FormatDeleteChildQuestion, @Model.ChildName);
+    String DeleteChild = String.Format(Lang.FormatDeleteChildConfirmation, @Model.ChildName);
 }
 
-<h2>Are you sure you want to delete @Model.ChildName's account?</h2>
+<h2>@confirmDeleteChildTitle</h2>
 <div>
     @{ Html.BeginForm(); }
     @Html.HiddenFor(x => x.ChildId)
@@ -12,7 +15,7 @@
     <table>
         <tr>
             <td>&nbsp;</td>
-            <td><input type="submit" value="Yes, Delete @Model.ChildName's account" /></td>
+            <td><input type="submit" value="@" /></td>
         </tr>
     </table>
     @{ Html.EndForm(); }

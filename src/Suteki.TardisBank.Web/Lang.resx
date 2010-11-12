@@ -162,6 +162,12 @@
   <data name="FormatChildAccount" xml:space="preserve">
     <value>{0}'s Account</value>
   </data>
+  <data name="FormatDeleteChildConfirmation" xml:space="preserve">
+    <value>Yes, Delete {0}'s account</value>
+  </data>
+  <data name="FormatDeleteChildQuestion" xml:space="preserve">
+    <value>Are you sure you want to delete {0}'s account?</value>
+  </data>
   <data name="FormatMakeAPaymentTo" xml:space="preserve">
     <value>Make a Payment to {0}</value>
   </data>
