@@ -1,5 +1,7 @@
 ﻿@model Parent
 
+@using Suteki.TardisBank.Web;
+
 <ul id="menu">
     <li>@Html.ActionLink("Home", "Index", "Home")</li>
     <li>@Html.ActionLink("My Messages (" + Model.Messages.Where(x => !x.HasBeenRead).Count() + ")", "Messages", "User")</li>

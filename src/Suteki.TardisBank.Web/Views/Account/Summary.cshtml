@@ -1,39 +1,48 @@
 ﻿@model AccountSummaryViewModel
 
+@using Suteki.TardisBank.Web;
+
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
-	var accountSummary = String.Format(Suteki.TardisBank.Web.Lang.FormatAccountSummary, Model.Child.Name);
+    var accountSummary = String.Format(Lang.FormatAccountSummary, Model.Child.Name);
 }
 
 <h2>@accountSummary</h2>
 
 <div class="grid_8 rightline">
-    <p>@Suteki.TardisBank.Web.Lang.CurrentBalance: <strong>@Model.Child.Account.Balance.ToString("c")</strong></p>
+    <p>@Lang.CurrentBalance: <strong>@Model.Child.Account.Balance.ToString("c")</strong></p>
 
-    <h3>@Suteki.TardisBank.Web.Lang.PocketMoneySchedule</h3>
-    @if(Model.Child.Account.PaymentSchedules.Count == 0) {
-    <p>@Suteki.TardisBank.Web.Lang.NoPocketMoneySchedule</p>
-    } else {
+    <h3>@Lang.PocketMoneySchedule</h3>
+    @if (Model.Child.Account.PaymentSchedules.Count == 0)
+    {
+    <p>@Lang.NoPocketMoneySchedule</p>
+    }
+    else
+    {
     <table>
         <thead>
             <tr>
-                <th>@Suteki.TardisBank.Web.Lang.Due</th>
-                <th>@Suteki.TardisBank.Web.Lang.Interval</th>
-                <th>@Suteki.TardisBank.Web.Lang.Description</th>
-                <th class="money">@Suteki.TardisBank.Web.Lang.Amount</th>
+                <th>@Lang.Due</th>
+                <th>@Lang.Interval</th>
+                <th>@Lang.Description</th>
+                <th class="money">@Lang.Amount</th>
                 <th>&nbsp;</th>
             </tr>
         </thead>
-    @foreach(var schedule in Model.Child.Account.PaymentSchedules) {
+    @foreach (var schedule in Model.Child.Account.PaymentSchedules)
+    {
         <tbody>
             <tr>
                 <td>@schedule.NextRun.ToShortDateString()</td>
                 <td>@schedule.Interval</td>
                 <td>@schedule.Description</td>
                 <td class="money">@schedule.Amount.ToString("c")</td>
-                @if(Model.IsParentView) {
-                <td>@Html.ActionLink(Suteki.TardisBank.Web.Lang.Delete, "RemoveSchedule", "Schedule", new { id = Model.Child.Id, scheduleId = schedule.Id }, new { @class = "warning" })</td>
-                }else{
+                @if (Model.IsParentView)
+                {
+                <td>@Html.ActionLink(Lang.Delete, "RemoveSchedule", "Schedule", new { id = Model.Child.Id, scheduleId = schedule.Id }, new { @class = "warning" })</td>
+                }
+                else
+                {
                 <td>&nbsp;</td>
                 }
             </tr>
@@ -42,19 +51,23 @@
     </table>
     }
 
-    <h3>@Suteki.TardisBank.Web.Lang.Transactions</h3>
-    @if(Model.Child.Account.Transactions.Count == 0) {
-    <p>@Suteki.TardisBank.Web.Lang.NoTransactions</p>
-    } else {
+    <h3>@Lang.Transactions</h3>
+    @if (Model.Child.Account.Transactions.Count == 0)
+    {
+    <p>@Lang.NoTransactions</p>
+    }
+    else
+    {
     <table>
         <thead>
             <tr>
-                <th>@Suteki.TardisBank.Web.Lang.Date</th>
-                <th>@Suteki.TardisBank.Web.Lang.Description</th>
-                <th class="money">@Suteki.TardisBank.Web.Lang.Amount</th>
+                <th>@Lang.Date</th>
+                <th>@Lang.Description</th>
+                <th class="money">@Lang.Amount</th>
             </tr>
         </thead>
-    @foreach(var transaction in Model.Child.Account.Transactions.Reverse()) {
+    @foreach (var transaction in Model.Child.Account.Transactions.Reverse())
+    {
         <tbody>
             <tr>
                 <td>@transaction.Date.ToShortDateString()</td>
@@ -69,16 +82,19 @@
 </div>
 
 <div class="grid_3">
-    @if(Model.IsParentView) {
+    @if (Model.IsParentView)
+    {
 		<p>To make a payment into your child's bank account:</p>
-        <div>@Html.ActionLink(Suteki.TardisBank.Web.Lang.MakeAPayment, "MakePayment", "Account", new { id = Model.Child.Id }, null)</div>
+        <div>@Html.ActionLink(Lang.MakeAPayment, "MakePayment", "Account", new { id = Model.Child.Id }, null)</div>
         <div>&nbsp;</div>
 		<p>To hand some cash to your child, or buy something on their behalf:</p>
 		<div>@Html.ActionLink("Withdraw Cash", "WithdrawCashForChild", "Account", new { id = Model.Child.Id }, null)</div>
         <div>&nbsp;</div>
 		<p>To set up a pocket money payment schedule:</p>
-        <div>@Html.ActionLink(Suteki.TardisBank.Web.Lang.SetUpSchedule, "AddSchedule", "Schedule", new { id = Model.Child.Id }, null)</div>
-    } else {
-        <div>@Html.ActionLink(Suteki.TardisBank.Web.Lang.WithdrawCash, "WithdrawCash", "Account")</div>
+        <div>@Html.ActionLink(Lang.SetUpSchedule, "AddSchedule", "Schedule", new { id = Model.Child.Id }, null)</div>
+    }
+    else
+    {
+        <div>@Html.ActionLink(Lang.WithdrawCash, "WithdrawCash", "Account")</div>
     }
 </div>

@@ -1,7 +1,8 @@
 ﻿@model DeleteChildConfirmViewModel
 
+@using Suteki.TardisBank.Web;
+
 @{
-    @using Suteki.TardisBank.Web;
     Layout = "~/Views/Shared/SiteLayout.cshtml";
     String confirmDeleteChildTitle = String.Format(Lang.FormatDeleteChildQuestion, @Model.ChildName);
     String DeleteChild = String.Format(Lang.FormatDeleteChildConfirmation, @Model.ChildName);

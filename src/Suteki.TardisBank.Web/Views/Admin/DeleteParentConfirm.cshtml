@@ -1,11 +1,12 @@
 ﻿
+@using Suteki.TardisBank.Web;
 
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
 }
 
-<h2>@Suteki.TardisBank.Web.Lang.DeleteConfirmationMessage</h2>
-<p>@Suteki.TardisBank.Web.Lang.ActionCanNotBeUndone</p>
-<p>@Html.ActionLink(Suteki.TardisBank.Web.Lang.DeleteConfirmation, "DeleteParent", null, new { @class = "warning" })</p>
+<h2>@Lang.DeleteConfirmationMessage</h2>
+<p>@Lang.ActionCanNotBeUndone</p>
+<p>@Html.ActionLink(Lang.DeleteConfirmation, "DeleteParent", null, new { @class = "warning" })</p>
 
 

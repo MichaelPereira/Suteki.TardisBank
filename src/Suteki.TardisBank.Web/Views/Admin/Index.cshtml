@@ -1,12 +1,14 @@
 ﻿
 
+@using Suteki.TardisBank.Web;
+
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
 }
 
-<h2>@Suteki.TardisBank.Web.Lang.AdministerYourAccount</h2>
-<p>@Suteki.TardisBank.Web.Lang.DeleteAccountPresentation</p>
-<p>@Html.ActionLink(Suteki.TardisBank.Web.Lang.DeleteMyAccount, "DeleteParentConfirm")</p>
+<h2>@Lang.AdministerYourAccount</h2>
+<p>@Lang.DeleteAccountPresentation</p>
+<p>@Html.ActionLink(Lang.DeleteMyAccount, "DeleteParentConfirm")</p>
 
 <p>To change your password, click the button below.</p>
 <p>@Html.ActionLink("Change my password", "ChangePassword")</p>

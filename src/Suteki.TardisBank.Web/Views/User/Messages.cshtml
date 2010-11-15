@@ -1,22 +1,31 @@
 ﻿@model User
 
+@using Suteki.TardisBank.Web;
+
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
 }
 
 <h2>Your Messages</h2>
-@if(Model.Messages.Count == 0) {
+@if (Model.Messages.Count == 0)
+{
 <p>You have no messages</p>
-} else {
+}
+else
+{
 <table>
 
-@foreach(var message in Model.Messages.Reverse()) {
+@foreach (var message in Model.Messages.Reverse())
+{
     <tr class="@(message.HasBeenRead ? "read" : "unread")">
         <td>@message.Date.ToShortDateString()</td>
         <td>@message.Text</td>
-        @if(message.HasBeenRead) {
+        @if (message.HasBeenRead)
+        {
         <td><strong>Done</strong></td>
-        } else {
+        }
+        else
+        {
         <td>@Html.ActionLink("OK", "ReadMessage", new { id = @message.Id })</td>
         }
     </tr>

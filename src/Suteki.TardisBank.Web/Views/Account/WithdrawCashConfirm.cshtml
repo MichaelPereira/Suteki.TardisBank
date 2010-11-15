@@ -1,10 +1,12 @@
 ﻿@model WithdrawCashViewModel
 
+@using Suteki.TardisBank.Web;
+
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
-	var WithdrawlConfirmedMessage = String.Format(@Suteki.TardisBank.Web.Lang.FormatWithdrawlConfirmedMessage, @Model.Amount.ToString("c"));
+    var WithdrawlConfirmedMessage = String.Format(Lang.FormatWithdrawlConfirmedMessage, Model.Amount.ToString("c"));
 }
 
-<h2>@Suteki.TardisBank.Web.Lang.WithdrawlConfirmed</h2>
-<p>@WithdrawlConfirmedMessage</p>
-<p>@Html.ActionLink(Suteki.TardisBank.Web.Lang.BackToYourAccount, "ChildView", "Account")</p>
+<h2>@Lang.WithdrawlConfirmed</h2>
+<p>@Lang.FormatWithdrawlConfirmedMessage</p>
+<p>@Html.ActionLink(Lang.BackToYourAccount, "ChildView", "Account")</p>

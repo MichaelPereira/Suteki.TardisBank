@@ -1,8 +1,11 @@
-﻿	@if (ViewData["Message"] != null) {
+﻿@using Suteki.TardisBank.Web;
+
+	@if (ViewData["Message"] != null)
+    {
 	<div style="border: solid 1px red">
 		@Html.Encode(ViewData["Message"].ToString())
 	</div>
-	}
+    }
 	<p>You must log in before entering the Members Area: </p>
 	<form action="Authenticate?ReturnUrl=@HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"])" method="post">
 	<label for="openid_identifier">OpenID: </label>
