@@ -100,8 +100,8 @@
     <Content Include="Content\Images\TardisBankLogo_32.png" />
     <Content Include="Content\Images\TardisBankLogo_64.png" />
     <Content Include="Content\Images\TardisBankLogo_75.png" />
-	<Content Include="Content\Images\TardisBankLogo_Shadow.png" />
- 	<Content Include="Content\Images\TardisBankLogo_ShadowWhite.png" />
+    <Content Include="Content\Images\TardisBankLogo_Shadow.png" />
+    <Content Include="Content\Images\TardisBankLogo_ShadowWhite.png" />
     <Content Include="Content\Images\title_background.png" />
     <Content Include="Content\menu_style.css" />
     <Content Include="Content\reset.css" />
@@ -110,7 +110,9 @@
     <Content Include="GenericError.htm" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -139,6 +141,7 @@
     <None Include="Views\Account\WithdrawCashConfirm.cshtml" />
     <None Include="Views\Account\WithdrawCashForChild.cshtml" />
     <None Include="Views\Account\WithdrawCashForChildConfirm.cshtml" />
+    <Content Include="Views\Admin\ChangePassword.cshtml" />
     <None Include="Views\Admin\DeleteParentConfirm.cshtml" />
     <None Include="Views\Admin\Index.cshtml" />
     <None Include="Views\Child\DeleteChild.cshtml" />

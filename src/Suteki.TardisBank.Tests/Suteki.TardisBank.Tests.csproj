@@ -76,10 +76,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Container\ControllerRegistrationTests.cs" />
+    <Compile Include="Container\RavenRegistrationTests.cs" />
     <Compile Include="Container\SetHelper.cs" />
     <Compile Include="Controllers\HomeControllerTests.cs" />
     <Compile Include="Db\LocalClientTest.cs" />
     <Compile Include="Helpers\ActionResultExtensions.cs" />
+    <Compile Include="Helpers\DateFomatterTests.cs" />
     <Compile Include="Model\ChildTests.cs" />
     <Compile Include="Model\MakePaymentTests.cs" />
     <Compile Include="Model\MessageCountLimitTests.cs" />
