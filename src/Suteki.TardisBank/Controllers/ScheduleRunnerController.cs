@@ -1,12 +1,13 @@
 using System;
 using System.Web.Mvc;
+using Suteki.TardisBank.Helpers;
 using Suteki.TardisBank.IoC;
 using Suteki.TardisBank.Mvc;
 using Suteki.TardisBank.Services;
 
 namespace Suteki.TardisBank.Controllers
 {
-    public class ScheduleRunnerController : Controller
+    public class ScheduleRunnerController : LocalizedController
     {
         readonly ISchedulerService schedulerService;
         readonly TardisConfiguration configuration;

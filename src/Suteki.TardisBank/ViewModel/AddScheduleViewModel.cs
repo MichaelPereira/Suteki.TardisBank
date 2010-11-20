@@ -10,6 +10,7 @@ namespace Suteki.TardisBank.ViewModel
         public string ChildId { get; set; }
 
         [Required]
+        [Range(-1000000, 1000000)]
         public decimal Amount { get; set; }
 
         [Required]

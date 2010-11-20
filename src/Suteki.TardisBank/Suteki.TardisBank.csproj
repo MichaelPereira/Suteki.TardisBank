@@ -67,24 +67,30 @@
       <Link>Version.cs</Link>
     </Compile>
     <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\AdminController.cs" />
+    <Compile Include="Controllers\AnalyticsController.cs" />
     <Compile Include="Controllers\ChildController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\LocalizedController.cs" />
     <Compile Include="Controllers\MenuController.cs" />
     <Compile Include="Controllers\OpenidController.cs" />
     <Compile Include="Controllers\PasswordController.cs" />
     <Compile Include="Controllers\ScheduleController.cs" />
     <Compile Include="Controllers\ScheduleRunnerController.cs" />
-    <Compile Include="Controllers\StatusCode.cs" />
+    <Compile Include="Helpers\DateFormatter.cs" />
+    <Compile Include="Helpers\StatusCode.cs" />
     <Compile Include="Controllers\UserController.cs" />
     <Compile Include="Events\DomainEvent.cs" />
     <Compile Include="Events\IDomainEvent.cs" />
     <Compile Include="Events\NewParentCreatedEvent.cs" />
+    <Compile Include="Events\SendMessageEvent.cs" />
     <Compile Include="Handlers\IHandle.cs" />
     <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Handlers\SendMessageEmailHandler.cs" />
     <Compile Include="Handlers\SendRegistrationEmailHandler.cs" />
     <Compile Include="Indexes\Child_ByPendingSchedule.cs" />
     <Compile Include="IoC\ControllersInstaller.cs" />
-    <Compile Include="IoC\CoreInstaller.cs" />
+    <Compile Include="IoC\MvcGooInstaller.cs" />
     <Compile Include="IoC\HandlerInstaller.cs" />
     <Compile Include="IoC\RavenInstaller.cs" />
     <Compile Include="IoC\ServicesInstaller.cs" />
@@ -98,13 +104,9 @@
     <Compile Include="Model\PaymentSchedule.cs" />
     <Compile Include="Model\Transaction.cs" />
     <Compile Include="Model\User.cs" />
+    <Compile Include="Mvc\Current.cs" />
     <Compile Include="Mvc\UnitOfWorkAttribute.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ResourceMessages.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>ResourceMessages.resx</DependentUpon>
-    </Compile>
     <Compile Include="Services\EmailService.cs" />
     <Compile Include="Services\FormsAuthenticationService.cs" />
     <Compile Include="Services\HttpContextService.cs" />
@@ -114,13 +116,20 @@
     <Compile Include="TardisBankException.cs" />
     <Compile Include="ViewModel\AccountSummaryViewModel.cs" />
     <Compile Include="ViewModel\AddScheduleViewModel.cs" />
+	<Compile Include="ViewModel\ChangePasswordViewModel.cs" />
     <Compile Include="ViewModel\DeleteChildConfirmViewModel.cs" />
     <Compile Include="ViewModel\ForgottenPasswordViewModel.cs" />
     <Compile Include="ViewModel\LoginViewModel.cs" />
     <Compile Include="ViewModel\MakePaymentViewModel.cs" />
     <Compile Include="ViewModel\RegistrationViewModel.cs" />
     <Compile Include="ViewModel\UserViewModel.cs" />
+    <Compile Include="ViewModel\WithdrawCashForChildViewModel.cs" />
     <Compile Include="ViewModel\WithdrawCashViewModel.cs" />
+	<Compile Include="ResourceMessages.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ResourceMessages.resx</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

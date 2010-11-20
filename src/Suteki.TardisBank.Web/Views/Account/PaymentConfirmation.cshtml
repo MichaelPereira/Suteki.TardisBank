@@ -1,11 +1,15 @@
 ﻿@model MakePaymentViewModel
 
+@using Suteki.TardisBank.Web;
+
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
+    var paymentConfirmedMessage = String.Format(Lang.FormatPaymentConfirmedMessage, Model.Amount.ToString("c"), Model.ChildName, Model.Description);
+    var childAccount = String.Format(Lang.FormatChildAccount, Model.ChildName);
 }
 
-<h2>Payment Confirmed</h2>
-<p>You have transferred @Model.Amount.ToString("0.00") to @Model.ChildName's account with the description "@Model.Description".</p>
-<p>@Html.ActionLink(Model.ChildName + "'s Account", "ParentView", "Account", new { id = @Model.ChildId }, null)</p>
+<h2>@Lang.PaymentConfirmed</h2>
+<p>@paymentConfirmedMessage</p>
+<p>@Html.ActionLink(childAccount, "ParentView", "Account", new { id = @Model.ChildId }, null)</p>
 
 

@@ -3,7 +3,6 @@ using System.Web.Mvc;
 using System.Web.Routing;
 using Castle.MicroKernel.Registration;
 using Castle.Windsor;
-using Castle.Windsor.Configuration.Interpreters;
 using Castle.Windsor.Installer;
 
 namespace Suteki.TardisBank.Web
@@ -22,6 +21,14 @@ namespace Suteki.TardisBank.Web
         {
             routes.IgnoreRoute("{resource}.axd/{*pathInfo}");
             routes.IgnoreRoute("favicon.ico");
+            routes.IgnoreRoute("robots.txt");
+            routes.IgnoreRoute("Content/{*pathInfo}");
+
+            routes.MapRoute(
+                "LocalizedDefault", // Route name
+                "{lang}/{controller}/{action}/{id}", // URL with parameters
+                new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
+            );
 
             routes.MapRoute(
                 "Default", // Route name
@@ -29,6 +36,11 @@ namespace Suteki.TardisBank.Web
                 new { controller = "Home", action = "Index", id = UrlParameter.Optional } // Parameter defaults
             );
 
+            routes.MapRoute(
+                "LocalizedWithRavenId", // Route name
+                "{lang}/{controller}/{action}/{entity}/{id}", // URL with parameters
+                new { controller = "Home", action = "Index", entity = UrlParameter.Optional, id = UrlParameter.Optional } // Parameter defaults
+            );
             routes.MapRoute(
                 "WithRavenId", // Route name
                 "{controller}/{action}/{entity}/{id}", // URL with parameters
@@ -51,8 +63,9 @@ namespace Suteki.TardisBank.Web
         {
             if (container == null)
             {
-                container = new WindsorContainer(new XmlInterpreter("Windsor.xml"))
+                container = new WindsorContainer()
                     .Install(
+                        Configuration.FromXmlFile("Windsor.xml"),
                         FromAssembly.InDirectory(new AssemblyFilter(HttpRuntime.BinDirectory, "Suteki.*.dll")));
             }
         }

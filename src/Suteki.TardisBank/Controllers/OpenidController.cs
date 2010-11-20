@@ -6,7 +6,7 @@ using Suteki.TardisBank.Services;
 
 namespace Suteki.TardisBank.Controllers
 {
-    public class OpenidController : Controller
+    public class OpenidController : LocalizedController
     {
         readonly IFormsAuthenticationService formsAuthenticationService;
         readonly IOpenIdService openIdService;

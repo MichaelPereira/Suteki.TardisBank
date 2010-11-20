@@ -2,7 +2,7 @@ using System.Web.Mvc;
 
 namespace Suteki.TardisBank.Controllers
 {
-    public class HomeController : Controller
+    public class HomeController : LocalizedController
     {
         public ViewResult Index()
         {

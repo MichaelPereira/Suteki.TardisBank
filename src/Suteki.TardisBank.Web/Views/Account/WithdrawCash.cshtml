@@ -1,5 +1,7 @@
 ﻿@model WithdrawCashViewModel
 
+@using Suteki.TardisBank.Web;
+
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
 }
@@ -13,7 +15,7 @@
             <td>@Html.TextBoxFor(x => x.Description)</td>
         </tr>
         <tr>
-            <td><label for="Amount">Amount</label></td>
+            <td><label for="Amount">Amount @Current.CurrencySymbol</label></td>
             <td>@Html.TextBoxFor(x => x.Amount)</td>
         </tr>
         <tr>

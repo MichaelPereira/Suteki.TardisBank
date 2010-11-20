@@ -1,5 +1,6 @@
 using System;
 using System.Web.Mvc;
+using Suteki.TardisBank.Helpers;
 using Suteki.TardisBank.Model;
 using Suteki.TardisBank.Mvc;
 using Suteki.TardisBank.Services;
@@ -7,7 +8,7 @@ using Suteki.TardisBank.ViewModel;
 
 namespace Suteki.TardisBank.Controllers
 {
-    public class AccountController : Controller
+    public class AccountController : LocalizedController
     {
         readonly IUserService userService;
 
@@ -150,6 +151,64 @@ namespace Suteki.TardisBank.Controllers
             }
 
             return View("WithdrawCashConfirm", withdrawCashViewModel);
+        }
+
+        [HttpGet]
+        public ActionResult WithdrawCashForChild(string id)
+        {
+            // id is the child's user name
+            if (id == null)
+            {
+                throw new ArgumentNullException("id");
+            }
+
+            var parent = userService.CurrentUser as Parent;
+            var child = userService.GetUserByUserName(id) as Child;
+
+            if (userService.AreNullOrNotRelated(parent, child)) return StatusCode.NotFound;
+
+            return View(new WithdrawCashForChildViewModel
+            {
+                ChildId = child.Id,
+                ChildName = child.Name,
+                Description = "",
+                Amount = 0M
+            });
+        }
+
+        [HttpPost, UnitOfWork]
+        public ActionResult WithdrawCashForChild(WithdrawCashForChildViewModel withdrawCashForChildViewModel)
+        {
+            if (!ModelState.IsValid) return View(withdrawCashForChildViewModel);
+            if (withdrawCashForChildViewModel == null)
+            {
+                throw new ArgumentNullException("withdrawCashForChildViewModel");
+            }
+
+            if (withdrawCashForChildViewModel.Amount == 0M)
+            {
+                ModelState.AddModelError("Amount", "0.00 is not a valid amount.");
+                return View(withdrawCashForChildViewModel);
+            }
+
+            var child = userService.GetUser(withdrawCashForChildViewModel.ChildId) as Child;
+            var parent = userService.CurrentUser as Parent;
+            if (userService.AreNullOrNotRelated(parent, child)) return StatusCode.NotFound;
+
+            try
+            {
+                child.AcceptCashFromParent(
+                    parent,
+                    withdrawCashForChildViewModel.Amount,
+                    withdrawCashForChildViewModel.Description);
+            }
+            catch (CashWithdrawException cashWithdrawException)
+            {
+                ModelState.AddModelError("Amount", cashWithdrawException.Message);
+                return View(withdrawCashForChildViewModel);
+            }
+
+            return View("WithdrawCashForChildConfirm", withdrawCashForChildViewModel);            
         }
     }
 }

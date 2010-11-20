@@ -1,26 +1,28 @@
 ﻿@model Parent
 
+@using Suteki.TardisBank.Web;
+
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
 }
 
 <h2>Your Childrens' Accounts</h2>
 
-@if(Model.Children.Count == 0){
+@if (Model.Children.Count == 0)
+{
 <p>Please click on the button below to create accounts for your children.</p>
-} else {
+}
+else
+{
 <p>This is list of your childrens' accounts. To view the account, click 'View Account'.</p>
-<p>To create a pocket money payment schedule, click 'Set up pocket money schedule'.</p>
-<p>To make an unscheduled payment, for example, to set up an opening balance on the account, click 'Make a Payment'.</p>
 }
 <hr />
 <table>
-@foreach(var child in Model.Children) {
+@foreach (var child in Model.Children)
+{
     <tr>
         <td><strong>@child.Name</strong></td>
         <td>@Html.ActionLink("View Account", "ParentView", "Account", new { id = child.ChildId }, null)</td>
-        <td>@Html.ActionLink("Set up pocket money schedule", "AddSchedule", "Schedule", new { id = child.ChildId }, null)</td>
-        <td>@Html.ActionLink("Make a Payment", "MakePayment", "Account", new { id = child.ChildId }, null)</td>
         <td>@Html.ActionLink("Delete", "DeleteChild", "Child", new { id = child.ChildId }, new { @class = "warning" })</td>
     </tr>
 }

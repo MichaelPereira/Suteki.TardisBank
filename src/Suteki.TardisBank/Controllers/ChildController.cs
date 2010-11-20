@@ -1,4 +1,5 @@
 using System.Web.Mvc;
+using Suteki.TardisBank.Helpers;
 using Suteki.TardisBank.Model;
 using Suteki.TardisBank.Mvc;
 using Suteki.TardisBank.Services;
@@ -6,7 +7,7 @@ using Suteki.TardisBank.ViewModel;
 
 namespace Suteki.TardisBank.Controllers
 {
-    public class ChildController : Controller
+    public class ChildController : LocalizedController
     {
         readonly IUserService userService;
 

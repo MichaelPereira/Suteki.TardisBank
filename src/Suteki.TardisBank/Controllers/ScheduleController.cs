@@ -1,5 +1,6 @@
 using System;
 using System.Web.Mvc;
+using Suteki.TardisBank.Helpers;
 using Suteki.TardisBank.Model;
 using Suteki.TardisBank.Mvc;
 using Suteki.TardisBank.Services;
@@ -7,7 +8,7 @@ using Suteki.TardisBank.ViewModel;
 
 namespace Suteki.TardisBank.Controllers
 {
-    public class ScheduleController : Controller
+    public class ScheduleController : LocalizedController
     {
         readonly IUserService userService;
 
@@ -40,6 +41,12 @@ namespace Suteki.TardisBank.Controllers
         public ActionResult AddSchedule(AddScheduleViewModel addScheduleViewModel)
         {
             if (!ModelState.IsValid) return View("AddSchedule", addScheduleViewModel);
+
+            if (addScheduleViewModel.StartDate < DateTime.Now.Date)
+            {
+                ModelState.AddModelError("StartDate", "The start date can not be in the past.");
+                return View("AddSchedule", addScheduleViewModel);
+            }
 
             var child = userService.GetUser(addScheduleViewModel.ChildId) as Child;
             if (userService.IsNotChildOfCurrentUser(child)) return StatusCode.NotFound;

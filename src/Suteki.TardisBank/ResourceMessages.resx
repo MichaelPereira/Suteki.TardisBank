@@ -120,6 +120,9 @@
   <data name="FormatCanNotWithdraw" xml:space="preserve">
     <value>You can not withdraw {0} because you only have {1} in your account</value>
   </data>
+  <data name="FormatCanNotWithdraw2" xml:space="preserve">
+    <value>You can not withdraw {0} because {1}'s account only has {2}</value>
+  </data>
   <data name="FormatIsNotAChildOf" xml:space="preserve">
     <value>{0} is not a child of {1}</value>
   </data>

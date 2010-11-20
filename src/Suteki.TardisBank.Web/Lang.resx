@@ -1,0 +1,225 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ActionCanNotBeUndone" xml:space="preserve">
+    <value>This action can not be undone.</value>
+  </data>
+  <data name="AdministerYourAccount" xml:space="preserve">
+    <value>Administer your account</value>
+  </data>
+  <data name="Amount" xml:space="preserve">
+    <value>Amount</value>
+  </data>
+  <data name="BackToYourAccount" xml:space="preserve">
+    <value>Back to your account</value>
+  </data>
+  <data name="CurrentBalance" xml:space="preserve">
+    <value>Current Balance</value>
+  </data>
+  <data name="Date" xml:space="preserve">
+    <value>Date</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="DeleteAccountPresentation" xml:space="preserve">
+    <value>To delete your account, including your children's accounts, click the button below.</value>
+  </data>
+  <data name="DeleteConfirmation" xml:space="preserve">
+    <value>Yes I'm sure. Delete my account</value>
+  </data>
+  <data name="DeleteConfirmationMessage" xml:space="preserve">
+    <value>Are you sure you want to delete your account?</value>
+  </data>
+  <data name="DeleteMyAccount" xml:space="preserve">
+    <value>Delete My Account</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Description</value>
+  </data>
+  <data name="Due" xml:space="preserve">
+    <value>Due</value>
+  </data>
+  <data name="FormatAccountSummary" xml:space="preserve">
+    <value>{0}'s Account Summary</value>
+  </data>
+  <data name="FormatChildAccount" xml:space="preserve">
+    <value>{0}'s Account</value>
+  </data>
+  <data name="FormatDeleteChildConfirmation" xml:space="preserve">
+    <value>Yes, Delete {0}'s account</value>
+  </data>
+  <data name="FormatDeleteChildQuestion" xml:space="preserve">
+    <value>Are you sure you want to delete {0}'s account?</value>
+  </data>
+  <data name="FormatMakeAPaymentTo" xml:space="preserve">
+    <value>Make a Payment to {0}</value>
+  </data>
+  <data name="FormatPaymentConfirmedMessage" xml:space="preserve">
+    <value>You have transferred {0} to {1}'s account with the description "{2}".</value>
+  </data>
+  <data name="FormatWithdrawlConfirmedMessage" xml:space="preserve">
+    <value>A message has been sent to your parent asking for the amount of {0}. Ask them to check their messages.</value>
+  </data>
+  <data name="Interval" xml:space="preserve">
+    <value>Interval</value>
+  </data>
+  <data name="MakeAPayment" xml:space="preserve">
+    <value>Make a Payment</value>
+  </data>
+  <data name="MakePayment" xml:space="preserve">
+    <value>Make Payment</value>
+  </data>
+  <data name="NoPocketMoneySchedule" xml:space="preserve">
+    <value>No pocket money schedule has been created yet.</value>
+  </data>
+  <data name="NoTransactions" xml:space="preserve">
+    <value>There are no transactions yet.</value>
+  </data>
+  <data name="PaymentConfirmed" xml:space="preserve">
+    <value>Payment Confirmed</value>
+  </data>
+  <data name="PaymentDescription" xml:space="preserve">
+    <value>Payment Description</value>
+  </data>
+  <data name="PocketMoneySchedule" xml:space="preserve">
+    <value>Pocket Money Schedule</value>
+  </data>
+  <data name="SetUpSchedule" xml:space="preserve">
+    <value>Set up Schedule</value>
+  </data>
+  <data name="Transactions" xml:space="preserve">
+    <value>Transactions</value>
+  </data>
+  <data name="WebsiteDescription" xml:space="preserve">
+    <value>A free, online, pocket money bank account for parents and kids.</value>
+  </data>
+  <data name="WebsiteSubtitle" xml:space="preserve">
+    <value>Pocket money on-line banking for kids and parents</value>
+  </data>
+  <data name="WebsiteTitle" xml:space="preserve">
+    <value>Tardis Bank</value>
+  </data>
+  <data name="WithdrawCash" xml:space="preserve">
+    <value>Withdraw Cash</value>
+  </data>
+  <data name="WithdrawlConfirmed" xml:space="preserve">
+    <value>Withdrawl Confirmed</value>
+  </data>
+</root>

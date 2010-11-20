@@ -75,15 +75,21 @@
     <Reference Include="System.Web.Routing" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Container\ControllerRegistrationTests.cs" />
+    <Compile Include="Container\RavenRegistrationTests.cs" />
+    <Compile Include="Container\SetHelper.cs" />
     <Compile Include="Controllers\HomeControllerTests.cs" />
     <Compile Include="Db\LocalClientTest.cs" />
     <Compile Include="Helpers\ActionResultExtensions.cs" />
+    <Compile Include="Helpers\DateFomatterTests.cs" />
     <Compile Include="Model\ChildTests.cs" />
     <Compile Include="Model\MakePaymentTests.cs" />
+    <Compile Include="Model\MessageCountLimitTests.cs" />
     <Compile Include="Model\MessageTests.cs" />
     <Compile Include="Model\ParentTests.cs" />
     <Compile Include="Model\PaymentSchedulingQueryTests.cs" />
     <Compile Include="Model\PaymentSchedulingTests.cs" />
+    <Compile Include="Model\TransactionCountLimitTests.cs" />
     <Compile Include="Model\UserActivationTests.cs" />
     <Compile Include="Model\UserTests.cs" />
     <Compile Include="Model\WithdrawlCashTests.cs" />
@@ -92,6 +98,7 @@
     <Compile Include="Spikes\RavenDbAnyOfPropertyCollection.cs" />
     <Compile Include="Spikes\RavenDbDoesntDoSelectMany.cs" />
     <Compile Include="Spikes\RavenDbSchedulingWithIndex.cs" />
+    <Compile Include="Spikes\ThreadCurrentCultureSpike.cs" />
     <Compile Include="TestExtensions.cs" />
     <Compile Include="Version.cs" />
 	<Compile Include="Extensions\StringExtensionsTests.cs" />

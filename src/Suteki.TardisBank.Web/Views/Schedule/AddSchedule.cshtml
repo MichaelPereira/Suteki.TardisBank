@@ -1,5 +1,7 @@
 ﻿@model AddScheduleViewModel
 
+@using Suteki.TardisBank.Web;
+
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
 }
@@ -17,7 +19,7 @@
             <td>@Html.TextBoxFor(x => x.Description)</td>
         </tr>
         <tr>
-            <td><label for="Amount">The regular amount you want to pay</label></td>
+            <td><label for="Amount">The regular amount you want to pay @Current.CurrencySymbol</label></td>
             <td>@Html.TextBoxFor(x => x.Amount)</td>
         </tr>
         <tr>
@@ -32,7 +34,7 @@
         </tr>
         <tr>
             <td><label for="StartDate">When do you want the payments to start</label></td>
-            <td>@Html.TextBoxFor(x => x.StartDate)</td>
+            <td>@Html.TextBox("StartDate", Model.StartDate.ToShortDateString())</td>
         </tr>
         <tr>
             <td>&nbsp;</td>
@@ -43,7 +45,7 @@
 </div>
 
 <script type="text/javascript" language="javascript">
-    $("#StartDate").datepicker({ dateFormat: 'dd/mm/yy' });
+    $("#StartDate").datepicker({ dateFormat: '@DateFormatter.CurrentJQuery' });
 </script>
 
 

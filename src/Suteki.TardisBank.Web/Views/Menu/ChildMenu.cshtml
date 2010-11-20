@@ -1,9 +1,10 @@
 ﻿@model Child
 
+@using Suteki.TardisBank.Web;
+
 <ul id="menu">
     <li>@Html.ActionLink("Home", "Index", "Home")</li>
     <li>@Html.ActionLink("My Account", "ChildView", "Account")</li>
-    <li>@Html.ActionLink("Withdraw Cash", "WithdrawCash", "Account")</li>
     <li>@Html.ActionLink("About", "About", "Home")</li>
 </ul>
 

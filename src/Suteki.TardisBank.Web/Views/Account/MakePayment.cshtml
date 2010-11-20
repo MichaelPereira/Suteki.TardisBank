@@ -1,9 +1,12 @@
 ﻿@model MakePaymentViewModel
 
-@{
+@using Suteki.TardisBank.Web;
+
+@{    
     Layout = "~/Views/Shared/SiteLayout.cshtml";
+	var pageTitle = String.Format(Lang.FormatMakeAPaymentTo, Model.ChildName);
 }
-<h2>Make a Payment to @Model.ChildName</h2>
+<h2>@pageTitle</h2>
 <p>@Html.ValidationSummary()</p>
 <div>
     @{ Html.BeginForm(); }
@@ -11,16 +14,16 @@
     @Html.HiddenFor(x => x.ChildName)
     <table>
         <tr>
-            <td><label for="Description">Payment Description</label></td>
+            <td><label for="Description">@Lang.PaymentDescription</label></td>
             <td>@Html.TextBoxFor(x => x.Description)</td>
         </tr>
         <tr>
-            <td><label for="Amount">Amount</label></td>
+            <td><label for="Amount">@Lang.Amount @Current.CurrencySymbol</label></td>
             <td>@Html.TextBoxFor(x => x.Amount)</td>
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td><input type="submit" value="Make Payment" /></td>
+            <td><input type="submit" value="@Suteki.TardisBank.Web.Lang.MakePayment" /></td>
         </tr>
     </table>
     @{ Html.EndForm(); }
