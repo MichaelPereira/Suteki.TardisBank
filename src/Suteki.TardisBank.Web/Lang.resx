@@ -263,6 +263,9 @@
   <data name="Kids" xml:space="preserve">
     <value>Kids</value>
   </data>
+  <data name="Legal" xml:space="preserve">
+    <value>Legal</value>
+  </data>
   <data name="LegalDescription1" xml:space="preserve">
     <value>Tardis Bank is for educational use only.</value>
   </data>

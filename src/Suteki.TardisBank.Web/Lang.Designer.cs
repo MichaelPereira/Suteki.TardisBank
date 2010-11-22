@@ -476,6 +476,15 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Legal.
+        /// </summary>
+        public static string Legal {
+            get {
+                return ResourceManager.GetString("Legal", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Tardis Bank is for educational use only..
         /// </summary>
         public static string LegalDescription1 {
