@@ -6,11 +6,11 @@
 		@Html.Encode(ViewData["Message"].ToString())
 	</div>
     }
-	<p>You must log in before entering the Members Area: </p>
+	<p>@Lang.OpenIDMustLogin</p>
 	<form action="Authenticate?ReturnUrl=@HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"])" method="post">
 	<label for="openid_identifier">OpenID: </label>
 	<input type="text" id="openid_identifier" name="openid_identifier" size="40" value="https://www.google.com/accounts/o8/id" />
-	<input type="submit" value="Login" />
+	<input type="submit" value="@Lang.Login" />
 	</form>
 
 	<script type="text/javascript">

@@ -61,6 +61,70 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to About.
+        /// </summary>
+        public static string About {
+            get {
+                return ResourceManager.GetString("About", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to &lt;p&gt;My son Leo (age 8) and I, that&apos;s us above, have a bit of a pocket money problem. He’s supposed to get £2.00 every week, paid on Sunday. He has a Tardis shaped piggy bank, into which he’s supposed to put the £2.00. When he wants to buy something, he’s supposed to get the cash and take it to the shop.&lt;/p&gt;
+        ///    &lt;p&gt;The thing is, I’m a complete scatter brain and often forget to pay the weekly £2.00. Leo is also very spontaneous in his purchasing habits and will often decide he wants to buy something, but has f [rest of string was truncated]&quot;;.
+        /// </summary>
+        public static string AboutDescription {
+            get {
+                return ResourceManager.GetString("AboutDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Get The Source.
+        /// </summary>
+        public static string AboutGetSourceCode {
+            get {
+                return ResourceManager.GetString("AboutGetSourceCode", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tardis Bank is Open Source software. It&apos;s licenced under the terms of the &lt;a class=&quot;text_link&quot; href=&quot;http://www.apache.org/licenses/LICENSE-2.0.html&quot;&gt;Apache 2 open source licence&lt;/a&gt;..
+        /// </summary>
+        public static string AboutLicence {
+            get {
+                return ResourceManager.GetString("AboutLicence", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to A photo of Mike and Leo.
+        /// </summary>
+        public static string AboutPhotoDescription {
+            get {
+                return ResourceManager.GetString("AboutPhotoDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Why is it called Tardis Bank anyway?.
+        /// </summary>
+        public static string AboutTitle {
+            get {
+                return ResourceManager.GetString("AboutTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Account Information.
+        /// </summary>
+        public static string AccountInformation {
+            get {
+                return ResourceManager.GetString("AccountInformation", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to This action can not be undone..
         /// </summary>
         public static string ActionCanNotBeUndone {
@@ -70,11 +134,38 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Add Schedule.
+        /// </summary>
+        public static string AddSchedule {
+            get {
+                return ResourceManager.GetString("AddSchedule", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is where you set up you child&apos;s regular pocket money payments..
+        /// </summary>
+        public static string AddScheduleDescription {
+            get {
+                return ResourceManager.GetString("AddScheduleDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Administer your account.
         /// </summary>
         public static string AdministerYourAccount {
             get {
                 return ResourceManager.GetString("AdministerYourAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Already Signed Up?.
+        /// </summary>
+        public static string AlreadySignedUp {
+            get {
+                return ResourceManager.GetString("AlreadySignedUp", resourceCulture);
             }
         }
         
@@ -97,11 +188,38 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Change Password.
+        /// </summary>
+        public static string ChangePassword {
+            get {
+                return ResourceManager.GetString("ChangePassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Contact us.
+        /// </summary>
+        public static string ContactUs {
+            get {
+                return ResourceManager.GetString("ContactUs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Current Balance.
         /// </summary>
         public static string CurrentBalance {
             get {
                 return ResourceManager.GetString("CurrentBalance", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Daily.
+        /// </summary>
+        public static string Daily {
+            get {
+                return ResourceManager.GetString("Daily", resourceCulture);
             }
         }
         
@@ -223,6 +341,15 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Note: we only show you the last {0} transactions.
+        /// </summary>
+        public static string FormatNoteShowMaxTransaction {
+            get {
+                return ResourceManager.GetString("FormatNoteShowMaxTransaction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to You have transferred {0} to {1}&apos;s account with the description &quot;{2}&quot;..
         /// </summary>
         public static string FormatPaymentConfirmedMessage {
@@ -241,11 +368,173 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Home.
+        /// </summary>
+        public static string Home {
+            get {
+                return ResourceManager.GetString("Home", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Piggy banks full of loose change are sooo 20th century..
+        /// </summary>
+        public static string IndexKidsDescription1 {
+            get {
+                return ResourceManager.GetString("IndexKidsDescription1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to With Tardis Bank you get your own on-line pocket money bank account. You&apos;ll be able to keep track of how much your parents owe you, and how much you can spend..
+        /// </summary>
+        public static string IndexKidsDescription2 {
+            get {
+                return ResourceManager.GetString("IndexKidsDescription2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Since no real money changes hands, there&apos;s no age limit..
+        /// </summary>
+        public static string IndexKidsDescription3 {
+            get {
+                return ResourceManager.GetString("IndexKidsDescription3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to It&apos;s really easy. Just get your Mum or Dad to register by clicking the button on this page. Within minutes you&apos;ll have your bank account set up..
+        /// </summary>
+        public static string IndexKidsDescription4 {
+            get {
+                return ResourceManager.GetString("IndexKidsDescription4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You are the bank..
+        /// </summary>
+        public static string IndexParentsDescription1 {
+            get {
+                return ResourceManager.GetString("IndexParentsDescription1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tardis bank is a virtual pocket money bank account. It&apos;s entirely free, we don&apos;t see a penny of your money, it&apos;s simply a way for your kids to learn financial literacy. It also makes it much easier for you to keep track of how much pocket money they should be getting..
+        /// </summary>
+        public static string IndexParentsDescription2 {
+            get {
+                return ResourceManager.GetString("IndexParentsDescription2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to After you register, you create accounts for your children and setup a pocket money payment schedule. You can also make additional payments into their account at any time, which is great for Christmas and birthdays. When your child wants to withdraw cash, they click a withdraw button and you will get a message, either by email or by checking your messages on the website, then you hand the money directly to them..
+        /// </summary>
+        public static string IndexParentsDescription3 {
+            get {
+                return ResourceManager.GetString("IndexParentsDescription3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Register now, it only takes a minute and all we need is your email address (which we won&apos;t give out to anyone else)..
+        /// </summary>
+        public static string IndexParentsDescription4 {
+            get {
+                return ResourceManager.GetString("IndexParentsDescription4", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Interval.
         /// </summary>
         public static string Interval {
             get {
                 return ResourceManager.GetString("Interval", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to How often do you want to pay it.
+        /// </summary>
+        public static string IntervalDescription {
+            get {
+                return ResourceManager.GetString("IntervalDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Kids.
+        /// </summary>
+        public static string Kids {
+            get {
+                return ResourceManager.GetString("Kids", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Tardis Bank is for educational use only..
+        /// </summary>
+        public static string LegalDescription1 {
+            get {
+                return ResourceManager.GetString("LegalDescription1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to While we do our best to make sure it works properly, We make no guarantees about either the integrity or the safety of your data..
+        /// </summary>
+        public static string LegalDescription2 {
+            get {
+                return ResourceManager.GetString("LegalDescription2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We a not liable for any loss or inconvenience you may experience as a consequence of using this site..
+        /// </summary>
+        public static string LegalDescription3 {
+            get {
+                return ResourceManager.GetString("LegalDescription3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Legal Stuff.
+        /// </summary>
+        public static string LegalTitle {
+            get {
+                return ResourceManager.GetString("LegalTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login.
+        /// </summary>
+        public static string Login {
+            get {
+                return ResourceManager.GetString("Login", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Login Here.
+        /// </summary>
+        public static string LoginHere {
+            get {
+                return ResourceManager.GetString("LoginHere", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Logout.
+        /// </summary>
+        public static string Logout {
+            get {
+                return ResourceManager.GetString("Logout", resourceCulture);
             }
         }
         
@@ -268,6 +557,69 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to To make a payment into your child&apos;s bank account:.
+        /// </summary>
+        public static string MakePaymentLinkDescription {
+            get {
+                return ResourceManager.GetString("MakePaymentLinkDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Members Only Area.
+        /// </summary>
+        public static string MembersOnlyArea {
+            get {
+                return ResourceManager.GetString("MembersOnlyArea", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Monthly.
+        /// </summary>
+        public static string Monthly {
+            get {
+                return ResourceManager.GetString("Monthly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My Account.
+        /// </summary>
+        public static string MyAccount {
+            get {
+                return ResourceManager.GetString("MyAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to My Messages.
+        /// </summary>
+        public static string MyMessages {
+            get {
+                return ResourceManager.GetString("MyMessages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New password.
+        /// </summary>
+        public static string NewPassword {
+            get {
+                return ResourceManager.GetString("NewPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to New password again.
+        /// </summary>
+        public static string NewPasswordRepeat {
+            get {
+                return ResourceManager.GetString("NewPasswordRepeat", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to No pocket money schedule has been created yet..
         /// </summary>
         public static string NoPocketMoneySchedule {
@@ -282,6 +634,96 @@ namespace Suteki.TardisBank.Web {
         public static string NoTransactions {
             get {
                 return ResourceManager.GetString("NoTransactions", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Old password.
+        /// </summary>
+        public static string OldPassword {
+            get {
+                return ResourceManager.GetString("OldPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Congratulations, You have completed the OpenID login process..
+        /// </summary>
+        public static string OpenIDCompleted {
+            get {
+                return ResourceManager.GetString("OpenIDCompleted", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You must log in before entering the Members Area:.
+        /// </summary>
+        public static string OpenIDMustLogin {
+            get {
+                return ResourceManager.GetString("OpenIDMustLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Open Source.
+        /// </summary>
+        public static string OpenSource {
+            get {
+                return ResourceManager.GetString("OpenSource", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parents.
+        /// </summary>
+        public static string Parents {
+            get {
+                return ResourceManager.GetString("Parents", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parents Sign Up.
+        /// </summary>
+        public static string ParentsSignUp {
+            get {
+                return ResourceManager.GetString("ParentsSignUp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password change was unsuccessful. Please correct the errors and try again..
+        /// </summary>
+        public static string PasswordChangeUnsuccessful {
+            get {
+                return ResourceManager.GetString("PasswordChangeUnsuccessful", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We have sent your new password to your email address..
+        /// </summary>
+        public static string PasswordResetSuccessfullyParentMessage {
+            get {
+                return ResourceManager.GetString("PasswordResetSuccessfullyParentMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Password Reset Sucessfully.
+        /// </summary>
+        public static string PasswordResetSucessfully {
+            get {
+                return ResourceManager.GetString("PasswordResetSucessfully", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We have sent your new password to your parent. Ask them to check their email..
+        /// </summary>
+        public static string PasswordResetSucessfullyChildMessage {
+            get {
+                return ResourceManager.GetString("PasswordResetSucessfullyChildMessage", resourceCulture);
             }
         }
         
@@ -313,11 +755,119 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
-        ///   Looks up a localized string similar to Set up Schedule.
+        ///   Looks up a localized string similar to The regular amount you want to pay.
         /// </summary>
-        public static string SetUpSchedule {
+        public static string RegularAmountToPay {
             get {
-                return ResourceManager.GetString("SetUpSchedule", resourceCulture);
+                return ResourceManager.GetString("RegularAmountToPay", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Name (or Email for parents).
+        /// </summary>
+        public static string ResetPasswordUsername {
+            get {
+                return ResourceManager.GetString("ResetPasswordUsername", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Reset Your Password.
+        /// </summary>
+        public static string ResetYourPassword {
+            get {
+                return ResourceManager.GetString("ResetYourPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you are a child, enter your user name below. If you are a parent, enter your email address..
+        /// </summary>
+        public static string ResetYourPasswordMessage {
+            get {
+                return ResourceManager.GetString("ResetYourPasswordMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Return to your child&apos;s account.
+        /// </summary>
+        public static string ReturnToChildAccount {
+            get {
+                return ResourceManager.GetString("ReturnToChildAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Schedule Created.
+        /// </summary>
+        public static string ScheduleCreated {
+            get {
+                return ResourceManager.GetString("ScheduleCreated", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your child&apos;s regular pocket money schedule has been created..
+        /// </summary>
+        public static string ScheduleCreatedMessage {
+            get {
+                return ResourceManager.GetString("ScheduleCreatedMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to The first payment of {0} will be paid on {1}, and then every {2} after that..
+        /// </summary>
+        public static string ScheduledPaymentSummary {
+            get {
+                return ResourceManager.GetString("ScheduledPaymentSummary", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Send me a new password.
+        /// </summary>
+        public static string SendNewPassword {
+            get {
+                return ResourceManager.GetString("SendNewPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Setup Schedule.
+        /// </summary>
+        public static string SetupSchedule {
+            get {
+                return ResourceManager.GetString("SetupSchedule", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To set up a pocket money payment schedule:.
+        /// </summary>
+        public static string SetupScheduleLinkDescription {
+            get {
+                return ResourceManager.GetString("SetupScheduleLinkDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Sign Up.
+        /// </summary>
+        public static string SignUp {
+            get {
+                return ResourceManager.GetString("SignUp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to When do you want the payments to start.
+        /// </summary>
+        public static string StartDateDescription {
+            get {
+                return ResourceManager.GetString("StartDateDescription", resourceCulture);
             }
         }
         
@@ -358,6 +908,15 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Weekly.
+        /// </summary>
+        public static string Weekly {
+            get {
+                return ResourceManager.GetString("Weekly", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Withdraw Cash.
         /// </summary>
         public static string WithdrawCash {
@@ -367,11 +926,38 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Use this form if you want to give your child some cash, or if you have bought something on their behalf. The amount will be deducted from their account..
+        /// </summary>
+        public static string WithdrawCashForYourChildDescription {
+            get {
+                return ResourceManager.GetString("WithdrawCashForYourChildDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Withdraw Cash For Your Child.
+        /// </summary>
+        public static string WithdrawCashForYourChildTitle {
+            get {
+                return ResourceManager.GetString("WithdrawCashForYourChildTitle", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Withdrawl Confirmed.
         /// </summary>
         public static string WithdrawlConfirmed {
             get {
                 return ResourceManager.GetString("WithdrawlConfirmed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to To hand some cash to your child, or buy something on their behalf:.
+        /// </summary>
+        public static string WithdrawnCashLinkDescription {
+            get {
+                return ResourceManager.GetString("WithdrawnCashLinkDescription", resourceCulture);
             }
         }
     }

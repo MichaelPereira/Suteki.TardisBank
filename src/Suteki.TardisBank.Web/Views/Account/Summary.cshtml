@@ -4,7 +4,8 @@
 
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
-    var accountSummary = String.Format(Lang.FormatAccountSummary, Model.Child.Name);
+    String accountSummary = String.Format(Lang.FormatAccountSummary, Model.Child.Name);
+	String noteMaxTransaction = String.Format(Lang.FormatNoteShowMaxTransaction, Account.MaxTransactions);
 }
 
 <h2>@accountSummary</h2>
@@ -77,21 +78,21 @@
         </tbody>
     }
     </table>
-    <p>(Note: we only show you the last @Account.MaxTransactions transactions)</p>
+    <p>(@noteMaxTransaction)</p>
     }
 </div>
 
 <div class="grid_3">
     @if (Model.IsParentView)
     {
-		<p>To make a payment into your child's bank account:</p>
+		<p>@Lang.MakePaymentLinkDescription</p>
         <div>@Html.ActionLink(Lang.MakeAPayment, "MakePayment", "Account", new { id = Model.Child.Id }, null)</div>
         <div>&nbsp;</div>
-		<p>To hand some cash to your child, or buy something on their behalf:</p>
+		<p>@Lang.WithdrawCashLinkDescription</p>
 		<div>@Html.ActionLink("Withdraw Cash", "WithdrawCashForChild", "Account", new { id = Model.Child.Id }, null)</div>
         <div>&nbsp;</div>
-		<p>To set up a pocket money payment schedule:</p>
-        <div>@Html.ActionLink(Lang.SetUpSchedule, "AddSchedule", "Schedule", new { id = Model.Child.Id }, null)</div>
+		<p>@Lang.SetupScheduleLinkDescription</p>
+        <div>@Html.ActionLink(Lang.SetupSchedule, "AddSchedule", "Schedule", new { id = Model.Child.Id }, null)</div>
     }
     else
     {

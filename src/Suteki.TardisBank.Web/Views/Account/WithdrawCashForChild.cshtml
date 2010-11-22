@@ -5,8 +5,8 @@
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
 }
-<h2>Withdraw Cash For Your Child</h2>
-<p>Use this form if you want to give your child some cash, or if you have bought something on their behalf. The amount will be deducted from their account.</p>
+<h2>@Lang.WithdrawCashForYourChildTitle</h2>
+<p>@Lang.WithdrawCashForYourChildDescription</p>
 <p>@Html.ValidationSummary()</p>
 <div>
     @{ Html.BeginForm(); }
@@ -14,19 +14,17 @@
     @Html.HiddenFor(x => x.ChildName)
     <table>
         <tr>
-            <td><label for="Description">Description</label></td>
+            <td><label for="Description">@Lang.Description</label></td>
             <td>@Html.TextBoxFor(x => x.Description)</td>
         </tr>
         <tr>
-            <td><label for="Amount">Amount @Current.CurrencySymbol</label></td>
+            <td><label for="Amount">@Lang.Amount @Current.CurrencySymbol</label></td>
             <td>@Html.TextBoxFor(x => x.Amount)</td>
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td><input type="submit" value="Withdraw Cash For Your Child" /></td>
+            <td><input type="submit" value="@Lang.WithdrawCashForYourChild" /></td>
         </tr>
     </table>
     @{ Html.EndForm(); }
 </div>
-
-

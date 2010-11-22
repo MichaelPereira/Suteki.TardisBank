@@ -6,19 +6,19 @@
     Layout = "~/Views/Shared/SiteLayout.cshtml";
 }
 
-<h2>Reset Your Password</h2>
-<p>If you are a child, enter your user name below. If you are a parent, enter your email address.</p>
+<h2>@Lang.ResetYourPassword</h2>
+<p>@Lang.ResetYourPasswordMessage</p>
 <p>@Html.ValidationSummary()</p>
 <div>
     @{ Html.BeginForm(); }
     <table>
         <tr>
-            <td><label for="UserName">User Name (or Email for parents)</label></td>
+            <td><label for="UserName">@Lang.ResetPasswordUsername</label></td>
             <td>@Html.TextBoxFor(x => x.UserName)</td>
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td><input type="submit" value="Send me a new password" /></td>
+            <td><input type="submit" value="@Lang.SendNewPassword" /></td>
         </tr>
     </table>
     @{ Html.EndForm(); }

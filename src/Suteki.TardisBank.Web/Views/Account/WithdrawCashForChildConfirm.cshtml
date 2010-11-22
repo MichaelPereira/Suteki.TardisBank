@@ -4,9 +4,11 @@
 
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
+	String WithdrawlConfirmedMessage = String.Format(Lang.FormatWithdrawlConfirmedMessage, Model.Amount, Model.ChildName);
+	String ChildAccount = String.Format(Lang.FormatChildAccount, Model.ChildName);
 }
-<h2>Withdrawl Confirmed</h2>
-<p>@Model.Amount has been withdrawn from @Model.ChildName's account.</p>
-<p>@Html.ActionLink(Model.ChildName + "'s Account", "ParentView", "Account", new { id = @Model.ChildId }, null)</p>
+<h2>@Lang.WithdrawlConfirmed</h2>
+<p>@WithdrawlConfirmedMessage</p>
+<p>@Html.ActionLink(@ChildAccount, "ParentView", "Account", new { id = @Model.ChildId }, null)</p>
 
 

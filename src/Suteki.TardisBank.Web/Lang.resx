@@ -117,11 +117,49 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="About" xml:space="preserve">
+    <value>About</value>
+  </data>
+  <data name="AboutDescription" xml:space="preserve">
+    <value>&lt;p&gt;My son Leo (age 8) and I, that's us above, have a bit of a pocket money problem. He’s supposed to get £2.00 every week, paid on Sunday. He has a Tardis shaped piggy bank, into which he’s supposed to put the £2.00. When he wants to buy something, he’s supposed to get the cash and take it to the shop.&lt;/p&gt;
+    &lt;p&gt;The thing is, I’m a complete scatter brain and often forget to pay the weekly £2.00. Leo is also very spontaneous in his purchasing habits and will often decide he wants to buy something, but has forgotten to bring along his pocket money. In that situation, I buy whatever it is he wants and tell him that I will deduct it from next week’s pocket money…. which I then promptly forget.&lt;/p&gt;
+    &lt;p&gt;We frequently have long discussions about how many weeks have gone past since his last payment and what I’ve bought on his behalf in the meantime. We loose all track of his real pocket money balance.&lt;/p&gt;
+    &lt;p&gt;I really do think that regular pocket money is an important financial education for Leo. He needs to learn how to manage money, but without any proper accounting it just ends up being an arbitrary and irregular hand-over of cash and he learns nothing, except how to beg effectively.&lt;/p&gt;
+    &lt;p&gt;These days most people don’t keep their money under the mattress. I use my bank’s online banking web site to manage my finances. What Leo needs is something similar for his pocket money. &lt;/p&gt;
+    &lt;p&gt;I'm a freelance software engineer, if you're feeling particularly geeky you can check out &lt;a class="text_link" href="http://mikehadlow.blogspot.com"&gt;my blog, Code Rant&lt;/a&gt;. Once I started to think about our requirements I realised that it would be pretty straightforward to put together a simple web application. I also realised that there was no reason why I couldn't make it available to anyone who wanted something similar. &lt;/p&gt;
+    &lt;p&gt;So Tardis Bank was born. I built it purely to 'scratch an itch', it's completely non-commercial. You can get the source code by following the link on the right. I hope you find it useful. Drop me a line using the email address on the right if you have any comments or suggestions. &lt;/p&gt;
+    &lt;p&gt;Happy Banking!&lt;/p&gt;
+    &lt;p&gt;Mike Hadlow 1st November 2010&lt;/p&gt;</value>
+  </data>
+  <data name="AboutGetSourceCode" xml:space="preserve">
+    <value>Get The Source</value>
+  </data>
+  <data name="AboutLicence" xml:space="preserve">
+    <value>Tardis Bank is Open Source software. It's licenced under the terms of the &lt;a class="text_link" href="http://www.apache.org/licenses/LICENSE-2.0.html"&gt;Apache 2 open source licence&lt;/a&gt;.</value>
+  </data>
+  <data name="AboutPhotoDescription" xml:space="preserve">
+    <value>A photo of Mike and Leo</value>
+  </data>
+  <data name="AboutTitle" xml:space="preserve">
+    <value>Why is it called Tardis Bank anyway?</value>
+  </data>
+  <data name="AccountInformation" xml:space="preserve">
+    <value>Account Information</value>
+  </data>
   <data name="ActionCanNotBeUndone" xml:space="preserve">
     <value>This action can not be undone.</value>
   </data>
+  <data name="AddSchedule" xml:space="preserve">
+    <value>Add Schedule</value>
+  </data>
+  <data name="AddScheduleDescription" xml:space="preserve">
+    <value>This is where you set up you child's regular pocket money payments.</value>
+  </data>
   <data name="AdministerYourAccount" xml:space="preserve">
     <value>Administer your account</value>
+  </data>
+  <data name="AlreadySignedUp" xml:space="preserve">
+    <value>Already Signed Up?</value>
   </data>
   <data name="Amount" xml:space="preserve">
     <value>Amount</value>
@@ -129,8 +167,17 @@
   <data name="BackToYourAccount" xml:space="preserve">
     <value>Back to your account</value>
   </data>
+  <data name="ChangePassword" xml:space="preserve">
+    <value>Change Password</value>
+  </data>
+  <data name="ContactUs" xml:space="preserve">
+    <value>Contact us</value>
+  </data>
   <data name="CurrentBalance" xml:space="preserve">
     <value>Current Balance</value>
+  </data>
+  <data name="Daily" xml:space="preserve">
+    <value>Daily</value>
   </data>
   <data name="Date" xml:space="preserve">
     <value>Date</value>
@@ -171,14 +218,71 @@
   <data name="FormatMakeAPaymentTo" xml:space="preserve">
     <value>Make a Payment to {0}</value>
   </data>
+  <data name="FormatNoteShowMaxTransaction" xml:space="preserve">
+    <value>Note: we only show you the last {0} transactions</value>
+  </data>
   <data name="FormatPaymentConfirmedMessage" xml:space="preserve">
     <value>You have transferred {0} to {1}'s account with the description "{2}".</value>
   </data>
   <data name="FormatWithdrawlConfirmedMessage" xml:space="preserve">
     <value>A message has been sent to your parent asking for the amount of {0}. Ask them to check their messages.</value>
   </data>
+  <data name="Home" xml:space="preserve">
+    <value>Home</value>
+  </data>
+  <data name="IndexKidsDescription1" xml:space="preserve">
+    <value>Piggy banks full of loose change are sooo 20th century.</value>
+  </data>
+  <data name="IndexKidsDescription2" xml:space="preserve">
+    <value>With Tardis Bank you get your own on-line pocket money bank account. You'll be able to keep track of how much your parents owe you, and how much you can spend.</value>
+  </data>
+  <data name="IndexKidsDescription3" xml:space="preserve">
+    <value>Since no real money changes hands, there's no age limit.</value>
+  </data>
+  <data name="IndexKidsDescription4" xml:space="preserve">
+    <value>It's really easy. Just get your Mum or Dad to register by clicking the button on this page. Within minutes you'll have your bank account set up.</value>
+  </data>
+  <data name="IndexParentsDescription1" xml:space="preserve">
+    <value>You are the bank.</value>
+  </data>
+  <data name="IndexParentsDescription2" xml:space="preserve">
+    <value>Tardis bank is a virtual pocket money bank account. It's entirely free, we don't see a penny of your money, it's simply a way for your kids to learn financial literacy. It also makes it much easier for you to keep track of how much pocket money they should be getting.</value>
+  </data>
+  <data name="IndexParentsDescription3" xml:space="preserve">
+    <value>After you register, you create accounts for your children and setup a pocket money payment schedule. You can also make additional payments into their account at any time, which is great for Christmas and birthdays. When your child wants to withdraw cash, they click a withdraw button and you will get a message, either by email or by checking your messages on the website, then you hand the money directly to them.</value>
+  </data>
+  <data name="IndexParentsDescription4" xml:space="preserve">
+    <value>Register now, it only takes a minute and all we need is your email address (which we won't give out to anyone else).</value>
+  </data>
   <data name="Interval" xml:space="preserve">
     <value>Interval</value>
+  </data>
+  <data name="IntervalDescription" xml:space="preserve">
+    <value>How often do you want to pay it</value>
+  </data>
+  <data name="Kids" xml:space="preserve">
+    <value>Kids</value>
+  </data>
+  <data name="LegalDescription1" xml:space="preserve">
+    <value>Tardis Bank is for educational use only.</value>
+  </data>
+  <data name="LegalDescription2" xml:space="preserve">
+    <value>While we do our best to make sure it works properly, We make no guarantees about either the integrity or the safety of your data.</value>
+  </data>
+  <data name="LegalDescription3" xml:space="preserve">
+    <value>We a not liable for any loss or inconvenience you may experience as a consequence of using this site.</value>
+  </data>
+  <data name="LegalTitle" xml:space="preserve">
+    <value>Legal Stuff</value>
+  </data>
+  <data name="Login" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="LoginHere" xml:space="preserve">
+    <value>Login Here</value>
+  </data>
+  <data name="Logout" xml:space="preserve">
+    <value>Logout</value>
   </data>
   <data name="MakeAPayment" xml:space="preserve">
     <value>Make a Payment</value>
@@ -186,11 +290,62 @@
   <data name="MakePayment" xml:space="preserve">
     <value>Make Payment</value>
   </data>
+  <data name="MakePaymentLinkDescription" xml:space="preserve">
+    <value>To make a payment into your child's bank account:</value>
+  </data>
+  <data name="MembersOnlyArea" xml:space="preserve">
+    <value>Members Only Area</value>
+  </data>
+  <data name="Monthly" xml:space="preserve">
+    <value>Monthly</value>
+  </data>
+  <data name="MyAccount" xml:space="preserve">
+    <value>My Account</value>
+  </data>
+  <data name="MyMessages" xml:space="preserve">
+    <value>My Messages</value>
+  </data>
+  <data name="NewPassword" xml:space="preserve">
+    <value>New password</value>
+  </data>
+  <data name="NewPasswordRepeat" xml:space="preserve">
+    <value>New password again</value>
+  </data>
   <data name="NoPocketMoneySchedule" xml:space="preserve">
     <value>No pocket money schedule has been created yet.</value>
   </data>
   <data name="NoTransactions" xml:space="preserve">
     <value>There are no transactions yet.</value>
+  </data>
+  <data name="OldPassword" xml:space="preserve">
+    <value>Old password</value>
+  </data>
+  <data name="OpenIDCompleted" xml:space="preserve">
+    <value>Congratulations, You have completed the OpenID login process.</value>
+  </data>
+  <data name="OpenIDMustLogin" xml:space="preserve">
+    <value>You must log in before entering the Members Area:</value>
+  </data>
+  <data name="OpenSource" xml:space="preserve">
+    <value>Open Source</value>
+  </data>
+  <data name="Parents" xml:space="preserve">
+    <value>Parents</value>
+  </data>
+  <data name="ParentsSignUp" xml:space="preserve">
+    <value>Parents Sign Up</value>
+  </data>
+  <data name="PasswordChangeUnsuccessful" xml:space="preserve">
+    <value>Password change was unsuccessful. Please correct the errors and try again.</value>
+  </data>
+  <data name="PasswordResetSuccessfullyParentMessage" xml:space="preserve">
+    <value>We have sent your new password to your email address.</value>
+  </data>
+  <data name="PasswordResetSucessfully" xml:space="preserve">
+    <value>Password Reset Sucessfully</value>
+  </data>
+  <data name="PasswordResetSucessfullyChildMessage" xml:space="preserve">
+    <value>We have sent your new password to your parent. Ask them to check their email.</value>
   </data>
   <data name="PaymentConfirmed" xml:space="preserve">
     <value>Payment Confirmed</value>
@@ -201,8 +356,44 @@
   <data name="PocketMoneySchedule" xml:space="preserve">
     <value>Pocket Money Schedule</value>
   </data>
-  <data name="SetUpSchedule" xml:space="preserve">
-    <value>Set up Schedule</value>
+  <data name="RegularAmountToPay" xml:space="preserve">
+    <value>The regular amount you want to pay</value>
+  </data>
+  <data name="ResetPasswordUsername" xml:space="preserve">
+    <value>User Name (or Email for parents)</value>
+  </data>
+  <data name="ResetYourPassword" xml:space="preserve">
+    <value>Reset Your Password</value>
+  </data>
+  <data name="ResetYourPasswordMessage" xml:space="preserve">
+    <value>If you are a child, enter your user name below. If you are a parent, enter your email address.</value>
+  </data>
+  <data name="ReturnToChildAccount" xml:space="preserve">
+    <value>Return to your child's account</value>
+  </data>
+  <data name="ScheduleCreated" xml:space="preserve">
+    <value>Schedule Created</value>
+  </data>
+  <data name="ScheduleCreatedMessage" xml:space="preserve">
+    <value>Your child's regular pocket money schedule has been created.</value>
+  </data>
+  <data name="ScheduledPaymentSummary" xml:space="preserve">
+    <value>The first payment of {0} will be paid on {1}, and then every {2} after that.</value>
+  </data>
+  <data name="SendNewPassword" xml:space="preserve">
+    <value>Send me a new password</value>
+  </data>
+  <data name="SetupSchedule" xml:space="preserve">
+    <value>Setup Schedule</value>
+  </data>
+  <data name="SetupScheduleLinkDescription" xml:space="preserve">
+    <value>To set up a pocket money payment schedule:</value>
+  </data>
+  <data name="SignUp" xml:space="preserve">
+    <value>Sign Up</value>
+  </data>
+  <data name="StartDateDescription" xml:space="preserve">
+    <value>When do you want the payments to start</value>
   </data>
   <data name="Transactions" xml:space="preserve">
     <value>Transactions</value>
@@ -216,10 +407,22 @@
   <data name="WebsiteTitle" xml:space="preserve">
     <value>Tardis Bank</value>
   </data>
+  <data name="Weekly" xml:space="preserve">
+    <value>Weekly</value>
+  </data>
   <data name="WithdrawCash" xml:space="preserve">
     <value>Withdraw Cash</value>
   </data>
+  <data name="WithdrawCashForYourChildDescription" xml:space="preserve">
+    <value>Use this form if you want to give your child some cash, or if you have bought something on their behalf. The amount will be deducted from their account.</value>
+  </data>
+  <data name="WithdrawCashForYourChildTitle" xml:space="preserve">
+    <value>Withdraw Cash For Your Child</value>
+  </data>
   <data name="WithdrawlConfirmed" xml:space="preserve">
     <value>Withdrawl Confirmed</value>
+  </data>
+  <data name="WithdrawnCashLinkDescription" xml:space="preserve">
+    <value>To hand some cash to your child, or buy something on their behalf:</value>
   </data>
 </root>

@@ -2,11 +2,16 @@
 
 @using Suteki.TardisBank.Web;
 
+@{
+	String messageNumber = String.Format("{0} ({1})", Lang.MyMessages, Model.Messages.Where(x => !x.HasBeenRead).Count());
+	String childrenNumber = String.Format("{0} ({1)}", Lang.Children, Model.Children.Count);
+}
+
 <ul id="menu">
-    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-    <li>@Html.ActionLink("My Messages (" + Model.Messages.Where(x => !x.HasBeenRead).Count() + ")", "Messages", "User")</li>
-    <li>@Html.ActionLink("Children (" + Model.Children.Count + ")", "Index", "Child")</li>
-    <li>@Html.ActionLink("My Account", "Index", "Admin")</li>
-    <li>@Html.ActionLink("About", "About", "Home")</li>
+    <li>@Html.ActionLink(@Lang.Home, "Index", "Home")</li>
+    <li>@Html.ActionLink(@messageNumber, "Messages", "User")</li>
+    <li>@Html.ActionLink(@childrenNumber, "Index", "Child")</li>
+    <li>@Html.ActionLink(@Lang.MyAccount, "Index", "Admin")</li>
+    <li>@Html.ActionLink(@Lang.About, "About", "Home")</li>
 </ul>
 
