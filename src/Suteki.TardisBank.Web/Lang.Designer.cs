@@ -134,6 +134,60 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Activation Failed.
+        /// </summary>
+        public static string ActivationFailed {
+            get {
+                return ResourceManager.GetString("ActivationFailed", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to We are very sorry, but we didn&apos;t recognise your activation key..
+        /// </summary>
+        public static string ActivationFailedDescription1 {
+            get {
+                return ResourceManager.GetString("ActivationFailedDescription1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Please try again, making sure you copy the URL exactly into your browser..
+        /// </summary>
+        public static string ActivationFailedDescription2 {
+            get {
+                return ResourceManager.GetString("ActivationFailedDescription2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to it still doesn&apos;t work, contact us at.
+        /// </summary>
+        public static string ActivationFailedDescription3 {
+            get {
+                return ResourceManager.GetString("ActivationFailedDescription3", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Add a Child Account.
+        /// </summary>
+        public static string AddChildAccount {
+            get {
+                return ResourceManager.GetString("AddChildAccount", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Complete the form below to create an account for your child..
+        /// </summary>
+        public static string AddChildAccountDescription {
+            get {
+                return ResourceManager.GetString("AddChildAccountDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Add Schedule.
         /// </summary>
         public static string AddSchedule {
@@ -197,11 +251,110 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Now check your email.
+        /// </summary>
+        public static string CheckYourEmail {
+            get {
+                return ResourceManager.GetString("CheckYourEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You should have recieved an email from us with a link to an activation page. Just click on the link to activate your account.
+        /// </summary>
+        public static string CheckYourEmailDescription1 {
+            get {
+                return ResourceManager.GetString("CheckYourEmailDescription1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to If you don&apos;t get the email, please contact us at.
+        /// </summary>
+        public static string CheckYourEmailDescription2 {
+            get {
+                return ResourceManager.GetString("CheckYourEmailDescription2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Child&apos;s First Name.
+        /// </summary>
+        public static string ChildFirstName {
+            get {
+                return ResourceManager.GetString("ChildFirstName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is just for display, for example &apos;Tom&apos;.
+        /// </summary>
+        public static string ChildFirstNameMessage {
+            get {
+                return ResourceManager.GetString("ChildFirstNameMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Child&apos;s Password.
+        /// </summary>
+        public static string ChildPassword {
+            get {
+                return ResourceManager.GetString("ChildPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to So that your child can sign in..
+        /// </summary>
+        public static string ChildPasswordMessage {
+            get {
+                return ResourceManager.GetString("ChildPasswordMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Child&apos;s Username.
+        /// </summary>
+        public static string ChildUsername {
+            get {
+                return ResourceManager.GetString("ChildUsername", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This needs to be unique, for example &apos;tomrobinson04&apos;.
+        /// </summary>
+        public static string ChildUsernameMessage {
+            get {
+                return ResourceManager.GetString("ChildUsernameMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Congratulations.
+        /// </summary>
+        public static string Congratulations {
+            get {
+                return ResourceManager.GetString("Congratulations", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Contact us.
         /// </summary>
         public static string ContactUs {
             get {
                 return ResourceManager.GetString("ContactUs", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Create Your Child&apos;s Account.
+        /// </summary>
+        public static string CreateYourChildAccount {
+            get {
+                return ResourceManager.GetString("CreateYourChildAccount", resourceCulture);
             }
         }
         
@@ -287,11 +440,29 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Done.
+        /// </summary>
+        public static string Done {
+            get {
+                return ResourceManager.GetString("Done", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Due.
         /// </summary>
         public static string Due {
             get {
                 return ResourceManager.GetString("Due", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Forgotten your password? Just click this link....
+        /// </summary>
+        public static string ForgottenYourPassword {
+            get {
+                return ResourceManager.GetString("ForgottenYourPassword", resourceCulture);
             }
         }
         
@@ -346,6 +517,15 @@ namespace Suteki.TardisBank.Web {
         public static string FormatNoteShowMaxTransaction {
             get {
                 return ResourceManager.GetString("FormatNoteShowMaxTransaction", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Note: we only keep the last {0} messages.
+        /// </summary>
+        public static string FormatOnlyKeepLastMessages {
+            get {
+                return ResourceManager.GetString("FormatOnlyKeepLastMessages", resourceCulture);
             }
         }
         
@@ -463,6 +643,15 @@ namespace Suteki.TardisBank.Web {
         public static string IntervalDescription {
             get {
                 return ResourceManager.GetString("IntervalDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to I&apos;ve forgotten my password.
+        /// </summary>
+        public static string IveForgottenMyPassword {
+            get {
+                return ResourceManager.GetString("IveForgottenMyPassword", resourceCulture);
             }
         }
         
@@ -647,6 +836,24 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to You are now registered at Tardis Bank. Please Log in..
+        /// </summary>
+        public static string NowRegisteredPleaseLogin {
+            get {
+                return ResourceManager.GetString("NowRegisteredPleaseLogin", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to OK.
+        /// </summary>
+        public static string OK {
+            get {
+                return ResourceManager.GetString("OK", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Old password.
         /// </summary>
         public static string OldPassword {
@@ -697,6 +904,33 @@ namespace Suteki.TardisBank.Web {
         public static string ParentsSignUp {
             get {
                 return ResourceManager.GetString("ParentsSignUp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Parents, please sign up for Tardis Bank by completing this form. We will then send you an email with a link to activate your account..
+        /// </summary>
+        public static string ParentsSignUpDescription1 {
+            get {
+                return ResourceManager.GetString("ParentsSignUpDescription1", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to After you have signed up, you can create accounts for all your kids..
+        /// </summary>
+        public static string ParentsSignUpDescription2 {
+            get {
+                return ResourceManager.GetString("ParentsSignUpDescription2", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to you have to ask a parent to sign up and create an account for you. You can&apos;t sign up here by yourself. After all, you need someone to actually give you the money..
+        /// </summary>
+        public static string ParentsSignUpDescription3 {
+            get {
+                return ResourceManager.GetString("ParentsSignUpDescription3", resourceCulture);
             }
         }
         
@@ -863,6 +1097,15 @@ namespace Suteki.TardisBank.Web {
         }
         
         /// <summary>
+        ///   Looks up a localized string similar to Sign Me Up!.
+        /// </summary>
+        public static string SignMeUp {
+            get {
+                return ResourceManager.GetString("SignMeUp", resourceCulture);
+            }
+        }
+        
+        /// <summary>
         ///   Looks up a localized string similar to Sign Up.
         /// </summary>
         public static string SignUp {
@@ -967,6 +1210,78 @@ namespace Suteki.TardisBank.Web {
         public static string WithdrawnCashLinkDescription {
             get {
                 return ResourceManager.GetString("WithdrawnCashLinkDescription", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to You have no messages.
+        /// </summary>
+        public static string YouHaveNoMessages {
+            get {
+                return ResourceManager.GetString("YouHaveNoMessages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Email.
+        /// </summary>
+        public static string YourEmail {
+            get {
+                return ResourceManager.GetString("YourEmail", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This must be a valid email address so that we can send you the activation link.
+        /// </summary>
+        public static string YourEmailMessage {
+            get {
+                return ResourceManager.GetString("YourEmailMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Messages.
+        /// </summary>
+        public static string YourMessages {
+            get {
+                return ResourceManager.GetString("YourMessages", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Name.
+        /// </summary>
+        public static string YourName {
+            get {
+                return ResourceManager.GetString("YourName", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to This is just for display, &apos;Mum&apos; or &apos;Dad&apos; is fine..
+        /// </summary>
+        public static string YourNameMessage {
+            get {
+                return ResourceManager.GetString("YourNameMessage", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to Your Password.
+        /// </summary>
+        public static string YourPassword {
+            get {
+                return ResourceManager.GetString("YourPassword", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized string similar to User Name (Email for Parents).
+        /// </summary>
+        public static string YourUsername {
+            get {
+                return ResourceManager.GetString("YourUsername", resourceCulture);
             }
         }
     }

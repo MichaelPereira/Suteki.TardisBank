@@ -149,6 +149,24 @@
   <data name="ActionCanNotBeUndone" xml:space="preserve">
     <value>This action can not be undone.</value>
   </data>
+  <data name="ActivationFailed" xml:space="preserve">
+    <value>Activation Failed</value>
+  </data>
+  <data name="ActivationFailedDescription1" xml:space="preserve">
+    <value>We are very sorry, but we didn't recognise your activation key.</value>
+  </data>
+  <data name="ActivationFailedDescription2" xml:space="preserve">
+    <value>Please try again, making sure you copy the URL exactly into your browser.</value>
+  </data>
+  <data name="ActivationFailedDescription3" xml:space="preserve">
+    <value>it still doesn't work, contact us at</value>
+  </data>
+  <data name="AddChildAccount" xml:space="preserve">
+    <value>Add a Child Account</value>
+  </data>
+  <data name="AddChildAccountDescription" xml:space="preserve">
+    <value>Complete the form below to create an account for your child.</value>
+  </data>
   <data name="AddSchedule" xml:space="preserve">
     <value>Add Schedule</value>
   </data>
@@ -170,8 +188,41 @@
   <data name="ChangePassword" xml:space="preserve">
     <value>Change Password</value>
   </data>
+  <data name="CheckYourEmail" xml:space="preserve">
+    <value>Now check your email</value>
+  </data>
+  <data name="CheckYourEmailDescription1" xml:space="preserve">
+    <value>You should have recieved an email from us with a link to an activation page. Just click on the link to activate your account</value>
+  </data>
+  <data name="CheckYourEmailDescription2" xml:space="preserve">
+    <value>If you don't get the email, please contact us at</value>
+  </data>
+  <data name="ChildFirstName" xml:space="preserve">
+    <value>Child's First Name</value>
+  </data>
+  <data name="ChildFirstNameMessage" xml:space="preserve">
+    <value>This is just for display, for example 'Tom'</value>
+  </data>
+  <data name="ChildPassword" xml:space="preserve">
+    <value>Child's Password</value>
+  </data>
+  <data name="ChildPasswordMessage" xml:space="preserve">
+    <value>So that your child can sign in.</value>
+  </data>
+  <data name="ChildUsername" xml:space="preserve">
+    <value>Child's Username</value>
+  </data>
+  <data name="ChildUsernameMessage" xml:space="preserve">
+    <value>This needs to be unique, for example 'tomrobinson04'</value>
+  </data>
+  <data name="Congratulations" xml:space="preserve">
+    <value>Congratulations</value>
+  </data>
   <data name="ContactUs" xml:space="preserve">
     <value>Contact us</value>
+  </data>
+  <data name="CreateYourChildAccount" xml:space="preserve">
+    <value>Create Your Child's Account</value>
   </data>
   <data name="CurrentBalance" xml:space="preserve">
     <value>Current Balance</value>
@@ -200,8 +251,14 @@
   <data name="Description" xml:space="preserve">
     <value>Description</value>
   </data>
+  <data name="Done" xml:space="preserve">
+    <value>Done</value>
+  </data>
   <data name="Due" xml:space="preserve">
     <value>Due</value>
+  </data>
+  <data name="ForgottenYourPassword" xml:space="preserve">
+    <value>Forgotten your password? Just click this link...</value>
   </data>
   <data name="FormatAccountSummary" xml:space="preserve">
     <value>{0}'s Account Summary</value>
@@ -220,6 +277,9 @@
   </data>
   <data name="FormatNoteShowMaxTransaction" xml:space="preserve">
     <value>Note: we only show you the last {0} transactions</value>
+  </data>
+  <data name="FormatOnlyKeepLastMessages" xml:space="preserve">
+    <value>Note: we only keep the last {0} messages</value>
   </data>
   <data name="FormatPaymentConfirmedMessage" xml:space="preserve">
     <value>You have transferred {0} to {1}'s account with the description "{2}".</value>
@@ -259,6 +319,9 @@
   </data>
   <data name="IntervalDescription" xml:space="preserve">
     <value>How often do you want to pay it</value>
+  </data>
+  <data name="IveForgottenMyPassword" xml:space="preserve">
+    <value>I've forgotten my password</value>
   </data>
   <data name="Kids" xml:space="preserve">
     <value>Kids</value>
@@ -320,6 +383,12 @@
   <data name="NoTransactions" xml:space="preserve">
     <value>There are no transactions yet.</value>
   </data>
+  <data name="NowRegisteredPleaseLogin" xml:space="preserve">
+    <value>You are now registered at Tardis Bank. Please Log in.</value>
+  </data>
+  <data name="OK" xml:space="preserve">
+    <value>OK</value>
+  </data>
   <data name="OldPassword" xml:space="preserve">
     <value>Old password</value>
   </data>
@@ -337,6 +406,15 @@
   </data>
   <data name="ParentsSignUp" xml:space="preserve">
     <value>Parents Sign Up</value>
+  </data>
+  <data name="ParentsSignUpDescription1" xml:space="preserve">
+    <value>Parents, please sign up for Tardis Bank by completing this form. We will then send you an email with a link to activate your account.</value>
+  </data>
+  <data name="ParentsSignUpDescription2" xml:space="preserve">
+    <value>After you have signed up, you can create accounts for all your kids.</value>
+  </data>
+  <data name="ParentsSignUpDescription3" xml:space="preserve">
+    <value>you have to ask a parent to sign up and create an account for you. You can't sign up here by yourself. After all, you need someone to actually give you the money.</value>
   </data>
   <data name="PasswordChangeUnsuccessful" xml:space="preserve">
     <value>Password change was unsuccessful. Please correct the errors and try again.</value>
@@ -392,6 +470,9 @@
   <data name="SetupScheduleLinkDescription" xml:space="preserve">
     <value>To set up a pocket money payment schedule:</value>
   </data>
+  <data name="SignMeUp" xml:space="preserve">
+    <value>Sign Me Up!</value>
+  </data>
   <data name="SignUp" xml:space="preserve">
     <value>Sign Up</value>
   </data>
@@ -427,5 +508,29 @@
   </data>
   <data name="WithdrawnCashLinkDescription" xml:space="preserve">
     <value>To hand some cash to your child, or buy something on their behalf:</value>
+  </data>
+  <data name="YouHaveNoMessages" xml:space="preserve">
+    <value>You have no messages</value>
+  </data>
+  <data name="YourEmail" xml:space="preserve">
+    <value>Your Email</value>
+  </data>
+  <data name="YourEmailMessage" xml:space="preserve">
+    <value>This must be a valid email address so that we can send you the activation link</value>
+  </data>
+  <data name="YourMessages" xml:space="preserve">
+    <value>Your Messages</value>
+  </data>
+  <data name="YourName" xml:space="preserve">
+    <value>Your Name</value>
+  </data>
+  <data name="YourNameMessage" xml:space="preserve">
+    <value>This is just for display, 'Mum' or 'Dad' is fine.</value>
+  </data>
+  <data name="YourPassword" xml:space="preserve">
+    <value>Your Password</value>
+  </data>
+  <data name="YourUsername" xml:space="preserve">
+    <value>User Name (Email for Parents)</value>
   </data>
 </root>

@@ -4,12 +4,13 @@
 
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
+    String maxMessages = String.Format(Lang.FormatOnlyKeepLastMessages, Suteki.TardisBank.Model.User.MaxMessages);
 }
 
-<h2>Your Messages</h2>
+<h2>@Lang.YourMessages</h2>
 @if (Model.Messages.Count == 0)
 {
-<p>You have no messages</p>
+<p>@Lang.YouHaveNoMessages</p>
 }
 else
 {
@@ -22,16 +23,16 @@ else
         <td>@message.Text</td>
         @if (message.HasBeenRead)
         {
-        <td><strong>Done</strong></td>
+        <td><strong>@Lang.Done</strong></td>
         }
         else
         {
-        <td>@Html.ActionLink("OK", "ReadMessage", new { id = @message.Id })</td>
+        <td>@Html.ActionLink(Lang.OK, "ReadMessage", new { id = @message.Id })</td>
         }
     </tr>
 }
 
 </table>
-<p>(Note: we only keep the last @Suteki.TardisBank.Model.User.MaxMessages messages)</p>
+<p>(@maxMessages)</p>
 }
 

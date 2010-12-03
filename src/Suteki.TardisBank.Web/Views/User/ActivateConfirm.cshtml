@@ -6,9 +6,9 @@
     Layout = "~/Views/Shared/SiteLayout.cshtml";
 }
 
-<h2>Congratulations!</h2>
-<p>You are now registered at Tardis Bank. Please Log in.</p>
-<p>@Html.ActionLink("Login", "Login")</p>
+<h2>@Lang.Congratulations</h2>
+<p>@Lang.NowRegisteredPleaseLogin</p>
+<p>@Html.ActionLink(Lang.Login, "Login")</p>
 
 
 

@@ -5,32 +5,32 @@
 @{
     Layout = "~/Views/Shared/SiteLayout.cshtml";
 }
-<h2>Parent Sign Up</h2>
-<p>Parents, please sign up for Tardis Bank by completing this form. We will then send you an email with a link to activate your account.</p>
-<p>After you have signed up, you can create accounts for all your kids.</p>
-<p><strong>Kids,</strong> you have to ask a parent to sign up and create an account for you. You can't sign up here by yourself. After all, you need someone to actually give you the money.</p>
+<h2>@Lang.ParentsSignUp</h2>
+<p>@Lang.ParentsSignUpDescription1</p>
+<p>@Lang.ParentsSignUpDescription2</p>
+<p><strong>@Lang.Kids,</strong> @Lang.ParentsSignUpDescription3</p>
 <p>@Html.ValidationSummary()</p>
 <div>
     @{ Html.BeginForm(); }
     <table>
         <tr>
-            <td><label for="Email">Your Email</label></td>
+            <td><label for="Email">@Lang.YourEmail</label></td>
             <td>@Html.TextBoxFor(x => x.Email)</td>
-            <td>This must be a valid email address so that we can send you the activation link</td>
+            <td>@Lang.YourEmailMessage</td>
         </tr>
         <tr>
-            <td><label for="Name">Your Name</label></td>
+            <td><label for="Name">@Lang.YourName</label></td>
             <td>@Html.TextBoxFor(x => x.Name)</td>
-            <td>This is just for display, 'Mum' or 'Dad' is fine.</td>
+            <td>@Lang.YourNameMessage</td>
         </tr>
         <tr>
-            <td><label for="Password">Your Password</label></td>
+            <td><label for="Password">@Lang.YourPassword</label></td>
             <td>@Html.PasswordFor(x => x.Password)</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td><input type="submit" value="Sign Me Up!" /></td>
+            <td><input type="submit" value="@Lang.SignMeUp" /></td>
             <td>&nbsp;</td>
         </tr>
     </table>
