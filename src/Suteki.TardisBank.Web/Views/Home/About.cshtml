@@ -9,14 +9,14 @@
 <div class="grid_8 rightline">
     <h2>@Lang.AboutTitle</h2>
     <img src="@Url.Content("~/Content/Images/meandleo.jpg")" alt="@Lang.AboutPhotoDescription" /><p>&nbsp;</p>
-    @Lang.AboutDescription
+    @Html.Raw(Lang.AboutDescription)
 </div>
 
 <div class="grid_3">
     <h2>@Lang.ContactUs</h2>
     <p><a href="mailto:info@tardisbank.com">info@tardisbank.com</a></p>
     <h2>@Lang.OpenSource</h2>
-    <p>@Lang.AboutLicence</p>
+    <p>@Html.Raw(Lang.AboutLicence)</p>
     <p><a href="http://github.com/mikehadlow/Suteki.TardisBank">@Lang.AboutGetSourceCode</a></p>
 </div>
 
