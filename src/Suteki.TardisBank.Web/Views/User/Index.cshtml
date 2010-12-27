@@ -1,6 +1,7 @@
 ﻿@model UserViewModel
 
 @using Suteki.TardisBank.Web;
+@using Suteki.TardisBank.Web.Helpers;
 
 <span>@Model.UserName&nbsp;</span> 
 @if (Model.IsLoggedIn)
@@ -11,3 +12,6 @@ else
 {
     @Html.ActionLink(Lang.Login, "Login")
 }
+&nbsp;
+@Html.LanguageSelectorLink("en-US", "[English]", "English", null)
+@Html.LanguageSelectorLink("fr-FR", "[Français]", "Français", null)

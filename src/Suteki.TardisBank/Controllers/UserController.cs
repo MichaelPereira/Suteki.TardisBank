@@ -19,7 +19,7 @@ namespace Suteki.TardisBank.Controllers
             this.formsAuthenticationService = formsAuthenticationService;
         }
 
-        [ChildActionOnly]
+        //[ChildActionOnly]
         public ActionResult Index()
         {
             var user = userService.CurrentUser;

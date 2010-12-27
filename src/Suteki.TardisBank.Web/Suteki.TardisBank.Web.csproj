@@ -73,6 +73,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Helpers\SwitchLanguageHelper.cs" />
     <Compile Include="Lang.fr.Designer.cs">
       <DependentUpon>Lang.fr.resx</DependentUpon>
       <AutoGen>True</AutoGen>
